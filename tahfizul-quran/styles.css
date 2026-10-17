@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap');
 :root {
   --navy: #1a2a56;
   --red: #a3161d;
@@ -2860,5 +2860,5 @@ ul { list-style: none; }
 
 /* English line of the quote track: Cormorant Garamond */
 @media (min-width: 601px) {
-  .verse-banner .verse-track .english { font-family: 'Lora', Georgia, serif; font-style: italic; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.08em; }
+  .verse-banner .verse-track .english { font-family: 'Cinzel', Georgia, serif; font-style: normal; font-weight: 600; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
 }
