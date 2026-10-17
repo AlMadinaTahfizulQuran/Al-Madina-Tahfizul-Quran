@@ -58,6 +58,6 @@
 /* Banner: phone version of the image with the white middle removed, so the
    two mosque pictures sit closer to the logo. Desktop keeps the original image. */
 @media (max-width: 600px) {
-  .header-banner { height: 67px; background: url('images/headerbg-mobile.png') center top / cover no-repeat; }
+  .header-banner { height: auto; aspect-ratio: 1672 / 373; background: url('images/headerbg-mobile.png') center top / 100% 100% no-repeat; }
   .header-banner .header-bg-img { display: none; }
 }
