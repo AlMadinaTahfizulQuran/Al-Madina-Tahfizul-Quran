@@ -284,3 +284,11 @@
 @media (max-width: 600px) {
   .about-teaser { border-bottom: 8px solid var(--gold); }
 }
+
+/* Phone calendar: both arrows side by side under the calendar, previous on the left */
+@media (max-width: 600px) {
+  .pdf-viewer-wrap { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .pdf-viewer-wrap canvas, .pdf-viewer-wrap #pdfCanvas { flex-basis: 100%; order: -2; }
+  .pdf-arrow:first-child { order: 0; }
+  .pdf-arrow:last-child { order: 0; }
+}
