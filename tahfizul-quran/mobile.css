@@ -497,3 +497,9 @@
 @media (max-width: 600px) {
   .about-work-divider { margin-top: 0 !important; }
 }
+
+/* Courses page (phone): same as desktop, no small label and gold heading */
+@media (max-width: 600px) {
+  .courses-hero-eyebrow { display: none !important; }
+  .courses-hero h1 { color: #D5A33E !important; }
+}
