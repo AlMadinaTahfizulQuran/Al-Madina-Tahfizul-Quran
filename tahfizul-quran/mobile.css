@@ -448,3 +448,12 @@
   .about-bottom-cta-subtitle { margin: 0 0 10px; }
   .about-bottom-cta-btn { padding: 8px 16px; font-size: 0.7rem; }
 }
+
+/* Phone About page: Our Work divider closer to the heading, full width, with a diamond at each end */
+@media (max-width: 600px) {
+  .about-work-title { margin-bottom: 0 !important; }
+  .about-work-divider { display: flex !important; align-items: center; gap: 10px; width: 100%; margin: -4px 0 20px !important; }
+  .about-work-divider .divider-line { flex: 1; height: 1px; width: auto !important; background: #D5A33E; }
+  .about-work-divider::before { content: 'C6'; color: #D5A33E; font-size: 0.6rem; }
+  .about-work-divider .divider-diamond { font-size: 0.6rem; color: #D5A33E; }
+}
