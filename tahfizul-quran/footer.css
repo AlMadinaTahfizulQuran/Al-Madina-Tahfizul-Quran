@@ -276,3 +276,15 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-identity .sf-social { margin-top: 10px; }
   .sf-col .sf-heading { margin: 0 0 10px; }
 }
+
+/* Phone footer: copyright sits on the ivory footer; the navy strip holds Designed by */
+@media (max-width: 600px) {
+  .sf-bottom { background: transparent; border-top: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+  .sf-bottom .sf-copy { background: #F5F0E8; color: #1a2a56; padding: 14px 5% 10px; margin: 0; text-align: center; }
+  .sf-bottom .sf-designed { background: #1a2a56; color: rgba(255, 255, 255, 0.85); padding: 10px 5% 14px; margin: 0; text-align: center; }
+}
+
+/* Phone footer: thin gold design line above the copyright */
+@media (max-width: 600px) {
+  .sf-bottom .sf-copy { border-top: 1px solid #D5A33E; margin: 0 5%; padding: 14px 0 10px; }
+}
