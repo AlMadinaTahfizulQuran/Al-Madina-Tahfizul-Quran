@@ -2,7 +2,7 @@
 @media (min-width: 901px) {
   .cb-wrap { position: relative; container-type: inline-size; }
   .cb-wrap .course-full-width-img { display: block; width: 100%; height: auto; }
-  .cb-text { position: absolute; top: 19%; width: 56%; color: #1f2a44; }
+  .cb-text { position: absolute; top: 13%; width: 56%; color: #1f2a44; }
   .cb-right .cb-text { left: 38.5%; }
   .cb-left .cb-text { left: 5.6%; }
   .cb-eyebrow { font-size: 0.85cqw; font-weight: 700; letter-spacing: 0.3em; color: var(--cb-color); margin: 0 0 0.6cqw; }
