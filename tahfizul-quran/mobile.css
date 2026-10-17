@@ -32,7 +32,7 @@
   .hero-single .hero-card h1 { font-size: 13px !important; line-height: 1.2 !important; margin-bottom: 6px !important; }
   .hero-single .hero-card p { font-size: 9.5px !important; margin-bottom: 6px !important; }
   .hero-single .hero-eyebrow { display: block !important; font-size: 0.5rem !important; margin-bottom: 6px !important; }
-  .hero-single .hero-cta-btn { position: absolute !important; left: 8px !important; bottom: 20px !important; width: auto !important; max-width: none !important; height: auto !important; padding: 4px 6px !important; font-size: 0.45rem !important; white-space: nowrap; }
+  .hero-single .hero-cta-btn { position: absolute !important; left: 8px !important; bottom: 20px !important; width: auto !important; max-width: none !important; height: auto !important; padding: 4px 6px !important; font-size: 0.55rem !important; font-weight: 800 !important; white-space: nowrap; }
   .hero-single .hero-arrow { width: 26px !important; height: 26px !important; font-size: 0.7rem !important; }
   .hero-single .hero-dots { bottom: 14px !important; }
   .hero-single-slide:nth-child(3) { background-position: 95% center; }
