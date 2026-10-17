@@ -170,3 +170,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-bottom { position: relative; }
   .sf-bottom .sf-copy { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; }
 }
+
+/* Desktop bottom bar: copyright on one row, a thin gold line, then Designed by on its own row below */
+@media (min-width: 901px) {
+  .sf-bottom { flex-direction: column; justify-content: center; align-items: center; gap: 0; padding: 10px 8% 10px; }
+  .sf-bottom .sf-copy { position: static; transform: none; white-space: normal; }
+  .sf-bottom .sf-designed { margin: 0; width: 100%; text-align: center; border-top: 1px solid rgba(213, 163, 62, 0.45); padding-top: 8px; margin-top: 8px; }
+}
