@@ -325,7 +325,7 @@
 
 /* Phone course cards: slightly smaller, centred */
 @media (max-width: 600px) {
-  .card { max-width: 88%; margin: 0 auto; }
+  .card { max-width: 94%; margin: 0 auto; }
 }
 
 /* Phone: calendar intro text smaller */
