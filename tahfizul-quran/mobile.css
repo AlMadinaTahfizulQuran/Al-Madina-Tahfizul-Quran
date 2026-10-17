@@ -162,7 +162,7 @@
     top: 50%;
     white-space: nowrap;
     margin: 0;
-    animation: verseScrollAll 12s linear infinite;
+    animation: verseScrollAll 24s linear infinite;
   }
   .verse-banner > span.verse-diamond:first-of-type { left: 0; }
   .verse-banner > p.arabic { left: 22px; }
@@ -170,8 +170,9 @@
   .verse-banner > span.verse-diamond:last-of-type { left: 635px; }
 }
 @keyframes verseScrollAll {
-  from { transform: translate(100vw, -50%); }
-  to { transform: translate(-100vw, -50%); }
+  0% { transform: translate(100vw, -50%); }
+  80% { transform: translate(-100vw, -50%); }
+  100% { transform: translate(-100vw, -50%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .verse-banner > span.verse-diamond, .verse-banner > p.arabic, .verse-banner > p:last-of-type { animation: none; }
