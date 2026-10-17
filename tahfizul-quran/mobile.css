@@ -292,3 +292,9 @@
   .pdf-arrow:first-child { order: 0; }
   .pdf-arrow:last-child { order: 0; }
 }
+
+/* Phone calendar arrows: transparent, no circle, outline chevron only */
+@media (max-width: 600px) {
+  .pdf-arrow { background: transparent; border: none; border-radius: 0; color: var(--navy); box-shadow: none; }
+  .pdf-arrow:hover { background: transparent; color: var(--gold); }
+}
