@@ -797,10 +797,10 @@ ul { list-style: none; }
   z-index: 3;
   background: var(--brown);
   color: var(--white);
-  padding: 8px 16px;
+  padding: 6px 12px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-transform: uppercase;
 }
 .about-cta-btn:hover { opacity: 0.9; }
