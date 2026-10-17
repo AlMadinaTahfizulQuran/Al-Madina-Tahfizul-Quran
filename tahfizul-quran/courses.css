@@ -2,9 +2,9 @@
 @media (min-width: 901px) {
   .cb-wrap { position: relative; container-type: inline-size; }
   .cb-wrap .course-full-width-img { display: block; width: 100%; height: auto; }
-  .cb-text { position: absolute; top: 13%; width: 56%; color: #1f2a44; }
-  .cb-right .cb-text { left: 38.5%; }
-  .cb-left .cb-text { left: 5.6%; }
+  .cb-text { position: absolute; top: 13%; width: 46%; color: #1f2a44; }
+  .cb-right .cb-text { left: 40%; }
+  .cb-left .cb-text { left: 9%; }
   .cb-eyebrow { font-size: 0.85cqw; font-weight: 700; letter-spacing: 0.3em; color: var(--cb-color); margin: 0 0 0.6cqw; }
   .cb-title { font-family: var(--font-heading); font-weight: 700; font-size: 3.2cqw; line-height: 1.1; color: var(--cb-color); margin: 3.4cqw 0 0.8cqw; }
   .cb-sub { font-size: 1.35cqw; line-height: 1.4; color: var(--cb-color); margin: 0 0 1.2cqw; }
