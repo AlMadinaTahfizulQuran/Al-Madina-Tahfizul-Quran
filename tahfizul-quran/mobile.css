@@ -389,7 +389,7 @@
   .main-nav, #stickyCloneHeader .main-nav { background: var(--green); box-shadow: none; height: 12px; }
 }
 
-/* Phone, scrolling: the right-hand phone number sits below the left-hand one */
+/* Phone, scrolling: both phone numbers stacked on the left */
 @media (max-width: 600px) {
-  #stickyCloneHeader .top-bar { flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 4px 10px; }
+  #stickyCloneHeader .top-bar { flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; padding: 4px 10px; }
 }
