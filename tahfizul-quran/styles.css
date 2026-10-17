@@ -27,7 +27,7 @@ ul { list-style: none; }
   transition: transform 0.25s ease;
 }
 .sticky-clone-header.visible { transform: translateY(0); }
-.sticky-clone-header .main-nav { box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
+.sticky-clone-header .main-nav { box-shadow: none; }
 .nav-grid-clone {
   display: grid !important;
   grid-template-columns: 1fr 280px 1fr;
