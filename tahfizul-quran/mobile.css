@@ -182,3 +182,24 @@
 @media (max-width: 600px) {
   .verse-banner { box-shadow: inset 0 0 0 1px var(--gold); }
 }
+
+/* Quote band: the whole line repeats continuously (one copy drawn by CSS, looped seamlessly) */
+@media (max-width: 600px) {
+  .verse-banner > * { display: none; }
+  .verse-banner::before {
+    content: "◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    white-space: pre;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--white);
+    transform: translateY(-50%);
+    animation: verseLoop 20s linear infinite;
+  }
+}
+@keyframes verseLoop {
+  from { transform: translate(0, -50%); }
+  to { transform: translate(-50%, -50%); }
+}
