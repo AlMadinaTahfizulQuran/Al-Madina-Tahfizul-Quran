@@ -177,3 +177,11 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-bottom .sf-copy { position: static; transform: none; white-space: normal; }
   .sf-bottom .sf-designed { margin: 0; width: 100%; text-align: center; border-top: 1px solid rgba(213, 163, 62, 0.45); padding-top: 8px; margin-top: 8px; }
 }
+
+/* Desktop bottom bar: copyright and designer credit on one line, with a gold diamond between them */
+@media (min-width: 901px) {
+  .sf-bottom { flex-direction: row; justify-content: center; align-items: center; gap: 14px; padding: 12px 8%; }
+  .sf-bottom .sf-copy { position: static; transform: none; white-space: normal; }
+  .sf-bottom .sf-designed { width: auto; border-top: 0; padding-top: 0; margin: 0; text-align: left; }
+  .sf-bottom .sf-designed::before { content: '◆'; color: #D5A33E; font-size: 0.55rem; margin-right: 14px; vertical-align: middle; }
+}
