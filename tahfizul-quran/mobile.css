@@ -2,11 +2,11 @@
    stylesheet link in each page), so desktop/web rendering is never affected.
    Add mobile overrides here; do not edit styles.css for mobile changes. */
 
-/* Top bar: keep the two contact lines compact so the logo doesn't cover them */
+/* Top bar: thin strip with the Bangladesh number on the left and the UK number on the right */
 @media (max-width: 600px) {
-  .top-bar { flex-direction: row; justify-content: center; gap: 4px 12px; padding: 8px 10px; font-size: 0.65rem; }
-  .top-bar a { margin-right: 8px; font-size: 0.65rem; }
-  .country-flag { font-size: 0.8rem; }
+  .top-bar { flex-direction: row; justify-content: space-between; gap: 4px; padding: 3px 10px; font-size: 0.55rem; }
+  .top-bar a { margin-right: 0; font-size: 0.55rem; }
+  .country-flag { font-size: 0.6rem; }
 }
 
 /* Logo sits inside the banner image, above the menu. The nameplate is placed
