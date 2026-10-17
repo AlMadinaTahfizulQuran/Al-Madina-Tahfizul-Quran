@@ -154,18 +154,24 @@
   .verse-diamond { font-size: 0.75rem; }
 }
 
-/* Green quote band on phones: a lighter green highlight slides across it */
+/* Green quote band on phones: a thin green strip travels across it */
 @media (max-width: 600px) {
-  .verse-banner {
-    background: linear-gradient(100deg, var(--green) 0%, var(--green) 35%, #3fb47a 50%, var(--green) 65%, var(--green) 100%);
-    background-size: 250% 100%;
-    animation: verseShine 5s linear infinite;
+  .verse-banner { position: relative; overflow: hidden; }
+  .verse-banner::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 35%;
+    background: #3fb47a;
+    animation: verseStrip 3.5s linear infinite;
   }
 }
-@keyframes verseShine {
-  from { background-position: 100% 0; }
-  to { background-position: 0% 0; }
+@keyframes verseStrip {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(300%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .verse-banner { animation: none; }
+  .verse-banner::before { animation: none; display: none; }
 }
