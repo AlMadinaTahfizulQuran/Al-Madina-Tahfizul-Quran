@@ -25,11 +25,11 @@
    sized for large screens. */
 @media (max-width: 600px) {
   .hero-single { min-height: 270px !important; }
-  .hero-single .hero-card { background: rgba(251, 248, 240, 0.85) !important; left: 12px !important; right: auto !important; width: 56% !important; max-width: none !important; top: auto !important; bottom: 28px !important; transform: none !important; padding: 14px 14px !important; }
-  .hero-single .hero-card h1 { font-size: 18px !important; line-height: 1.2 !important; margin-bottom: 6px !important; }
-  .hero-single .hero-card p { font-size: 11.5px !important; margin-bottom: 6px !important; }
+  .hero-single .hero-card { background: rgba(251, 248, 240, 0.85) !important; left: 12px !important; right: auto !important; width: 48% !important; max-width: none !important; top: auto !important; bottom: 28px !important; transform: none !important; padding: 10px 10px !important; }
+  .hero-single .hero-card h1 { font-size: 15px !important; line-height: 1.2 !important; margin-bottom: 6px !important; }
+  .hero-single .hero-card p { font-size: 10.5px !important; margin-bottom: 6px !important; }
   .hero-single .hero-eyebrow { display: block !important; font-size: 0.5rem !important; margin-bottom: 6px !important; }
-  .hero-single .hero-cta-btn { width: auto !important; max-width: none !important; height: auto !important; padding: 6px 12px !important; font-size: 0.6rem !important; white-space: nowrap; }
+  .hero-single .hero-cta-btn { width: auto !important; max-width: none !important; height: auto !important; padding: 5px 8px !important; font-size: 0.5rem !important; white-space: nowrap; }
   .hero-single .hero-arrow { width: 26px !important; height: 26px !important; font-size: 0.7rem !important; }
   .hero-single .hero-dots { bottom: 14px !important; }
   .hero-single-slide:nth-child(3) { background-position: 95% center; }
