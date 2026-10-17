@@ -117,3 +117,13 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   .sf-contact a[href^="mailto"] { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
 }
+
+/* Social icons centred under the logo (desktop): the row shrinks to its icons and sits in the middle */
+@media (min-width: 901px) {
+  .sf-identity .sf-social { width: fit-content; margin-left: auto; margin-right: auto; }
+}
+
+/* Logo block centred in its column (desktop), so the logo and icons share one centre */
+@media (min-width: 901px) {
+  .sf-identity .sf-brand { display: flex; width: fit-content; margin-left: auto; margin-right: auto; }
+}
