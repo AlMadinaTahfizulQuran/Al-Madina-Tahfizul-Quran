@@ -430,3 +430,8 @@
   .about-hero-content { background: rgba(251, 248, 240, 0.9) !important; padding: 18px !important; border-radius: 4px !important; margin-top: 150px !important; width: 74% !important; }
   .about-hero-left { padding-left: 0 !important; padding-right: 26% !important; }
 }
+
+/* Phone About page: remove the Arabic and English overlay text on the photo */
+@media (max-width: 600px) {
+  .about-hero-text-overlay { display: none !important; }
+}
