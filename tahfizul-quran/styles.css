@@ -2734,3 +2734,10 @@ ul { list-style: none; }
 /* Nameplate when it is moved into the sticky navy bar on scroll (all screens) */
 #stickyCloneHeader .main-nav { position: relative; }
 #stickyCloneHeader .logo-nameplate { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin: 0; z-index: 9999; }
+
+/* Desktop: the nameplate sits in the middle of the sticky menu bar, the same as at
+   the top of the page (its top edge 17px into the bar, hanging below it) */
+@media (min-width: 901px) {
+  #stickyCloneHeader .logo-nameplate { top: 17px; }
+  #stickyCloneHeader .nav-right { grid-column: 3; }
+}
