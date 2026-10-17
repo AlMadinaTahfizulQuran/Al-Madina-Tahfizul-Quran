@@ -222,3 +222,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-links a { font-size: 0.76rem; }
   .sf-contact li { font-size: 0.74rem; }
 }
+
+/* Phone footer: smaller Explore and Contact Us headings */
+@media (max-width: 600px) {
+  .sf-heading { font-size: 0.9rem; }
+}
