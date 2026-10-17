@@ -383,3 +383,8 @@
   #stickyCloneHeader .logo-nameplate .np-line1 { font-size: 0.62rem; line-height: 1.15; }
   #stickyCloneHeader .logo-nameplate .np-line2 { font-size: 0.8rem; line-height: 1.15; }
 }
+
+/* Phone: no navy menu bar colour, at the top and when scrolling (the nameplate stays) */
+@media (max-width: 600px) {
+  .main-nav, #stickyCloneHeader .main-nav { background: transparent; box-shadow: none; }
+}
