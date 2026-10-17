@@ -63,3 +63,10 @@
   .header-banner { height: auto; aspect-ratio: 1672 / 373; background: url('images/headerbg-mobile.png') center top / 100% 100% no-repeat; }
   .header-banner .header-bg-img { display: none; }
 }
+
+/* Sticky menu bar (shown after scrolling): add the nameplate so it stays on the
+   navy menu bar, the same as at the top of the page. Phones only. */
+@media (max-width: 600px) {
+  .sticky-clone-header .main-nav { position: relative; z-index: auto; }
+  .sticky-clone-header .main-nav::after { content: "Al-Madinah Tahfizul Quran\A Complex"; white-space: pre; position: absolute; left: 50%; top: 100%; transform: translateX(-50%); background: #fdfaf5; border: 2px solid var(--gold); border-top: none; border-radius: 0 0 5px 5px; padding: 2px 10px 3px; font-family: var(--font-heading); font-weight: 700; font-size: 0.6rem; line-height: 1.15; color: var(--navy); text-align: center; z-index: 9999; }
+}
