@@ -164,3 +164,9 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   .sf-identity .sf-social { position: relative; top: -4px; }
 }
+
+/* Desktop bottom bar: copyright text centred, Designed by stays on the right */
+@media (min-width: 901px) {
+  .sf-bottom { position: relative; }
+  .sf-bottom .sf-copy { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+}
