@@ -2932,3 +2932,16 @@ ul { list-style: none; }
   .footer-bottom .designed-by { color: rgba(255, 255, 255, 0.6); }
   .footer-bottom .designed-name { color: var(--gold); font-weight: 700; }
 }
+
+/* Desktop footer: navy panel with gold headings and cream text */
+@media (min-width: 901px) {
+  .site-footer { background: #1a2a56; background-image: none; }
+  .footer-column h4 { color: var(--gold); letter-spacing: 0.5px; }
+  .footer-divider { background: var(--gold); }
+  .footer-divider::after { background: #1a2a56; }
+  .footer-brand-name { color: #ffffff; }
+  .footer-tagline, .footer-contact-item, .footer-contact-item a, .footer-links a { color: rgba(255, 255, 255, 0.85); }
+  .footer-contact-item a:hover, .footer-links a:hover { color: var(--gold); }
+  .footer-links .arrow-icon { display: none; }
+  .footer-bottom { background: #111f40; border-top: 1px solid var(--gold); }
+}
