@@ -2780,20 +2780,22 @@ ul { list-style: none; }
 /* Desktop green quote band: the Arabic and English lines scroll together as one line */
 @media (min-width: 601px) {
   .verse-banner { overflow: hidden; position: relative; }
-  .verse-banner > p.arabic, .verse-banner > p:last-of-type {
+  .verse-banner > span.verse-diamond, .verse-banner > p.arabic, .verse-banner > p:last-of-type {
     position: absolute;
     top: 50%;
     white-space: nowrap;
     margin: 0;
-    animation: verseScrollBoth 14s linear infinite;
+    animation: verseScrollAll 14s linear infinite;
   }
-  .verse-banner > p.arabic { left: 0; }
-  .verse-banner > p:last-of-type { left: 200px; }
+  .verse-banner > span.verse-diamond:first-of-type { left: 0; }
+  .verse-banner > p.arabic { left: 22px; }
+  .verse-banner > p:last-of-type { left: 222px; }
+  .verse-banner > span.verse-diamond:last-of-type { left: 682px; }
 }
-@keyframes verseScrollBoth {
+@keyframes verseScrollAll {
   from { transform: translate(100vw, -50%); }
   to { transform: translate(-100vw, -50%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .verse-banner > p.arabic, .verse-banner > p:last-of-type { animation: none; }
+  .verse-banner > span.verse-diamond, .verse-banner > p.arabic, .verse-banner > p:last-of-type { animation: none; }
 }
