@@ -198,3 +198,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-links a { font-size: 0.85rem; }
   .sf-heading { font-size: 1.05rem; }
 }
+
+/* Phone footer: social icons the same size as desktop */
+@media (max-width: 600px) {
+  .sf-identity .sf-social { gap: 8px; margin-top: 20px; }
+  .sf-identity .sf-social-link { width: 22px; height: 22px; }
+  .sf-identity .sf-social-link svg { width: 14px; height: 14px; }
+}
