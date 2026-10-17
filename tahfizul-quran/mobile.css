@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
 
 /* Mobile-only styles. Loaded only at phone width (see media attribute on the
@@ -237,4 +238,10 @@
 /* English line of the quote track: Cormorant Garamond */
 @media (max-width: 600px) {
   .verse-banner .verse-track .english { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.5em; }
+}
+
+/* Green strip (phone): Arabic a little lower; English in the same Cinzel capitals as desktop, much smaller */
+@media (max-width: 600px) {
+  .verse-banner .verse-track .arabic { top: 0.2em; position: relative; }
+  .verse-banner .verse-track .english { font-family: 'Cinzel', Georgia, serif; font-style: normal; font-weight: 600; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
 }
