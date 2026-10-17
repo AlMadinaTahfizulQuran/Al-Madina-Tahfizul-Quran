@@ -386,5 +386,5 @@
 
 /* Phone: menu bar green and thinner, at the top and when scrolling (the nameplate stays) */
 @media (max-width: 600px) {
-  .main-nav, #stickyCloneHeader .main-nav { background: var(--green); box-shadow: none; height: 28px; }
+  .main-nav, #stickyCloneHeader .main-nav { background: var(--green); box-shadow: none; height: 20px; }
 }
