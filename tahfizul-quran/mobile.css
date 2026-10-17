@@ -337,3 +337,9 @@
 @media (max-width: 600px) {
   .download-btn { width: auto; padding: 8px 16px; font-size: 0.68rem; min-height: 0; }
 }
+
+/* Phone: hamburger hidden; the nameplate opens the menu */
+@media (max-width: 600px) {
+  .nav-toggle, #navToggleClone { display: none !important; }
+  .logo-nameplate { cursor: pointer; }
+}
