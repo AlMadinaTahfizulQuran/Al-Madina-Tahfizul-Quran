@@ -197,7 +197,7 @@
     font-weight: bold;
     color: var(--white);
     transform: translateY(-50%);
-    animation: verseLoop 34s linear infinite;
+    animation: verseLoop 18s linear infinite;
   }
 }
 @keyframes verseLoop {
