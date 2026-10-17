@@ -90,3 +90,9 @@
 @media (max-width: 600px) {
   .courses-header { padding-top: 16px; }
 }
+
+/* Our Courses label bigger, the Explore Our Courses heading smaller (phones only) */
+@media (max-width: 600px) {
+  .courses-eyebrow { font-size: 0.85rem; }
+  .courses-header h2 { font-size: 20px; }
+}
