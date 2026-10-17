@@ -187,7 +187,7 @@
 @media (max-width: 600px) {
   .verse-banner > * { display: none; }
   .verse-banner::before {
-    content: "◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ";
+    content: "◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ◆     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ     ◆     Iqra – Read in the name of your Lord who created. [Quran 96:1]     ";
     position: absolute;
     top: 50%;
     left: 0;
@@ -202,5 +202,5 @@
 }
 @keyframes verseLoop {
   from { transform: translate(0, -50%); }
-  to { transform: translate(-50%, -50%); }
+  to { transform: translate(-25%, -50%); }
 }
