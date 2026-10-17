@@ -97,7 +97,7 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   footer.site-footer .sf-inner { padding: 48px 8%; gap: 40px; }
   .sf-contact { gap: 14px; }
-  .sf-links a { min-height: 44px; }
+  .sf-links a { min-height: 30px; }
 }
 
 /* Footer gold lines match the width of each heading. The line is the heading's underline; the brand divider matches the name width. */
