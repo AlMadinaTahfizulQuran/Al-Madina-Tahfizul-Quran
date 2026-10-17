@@ -327,3 +327,8 @@
 @media (max-width: 600px) {
   .card { max-width: 88%; margin: 0 auto; }
 }
+
+/* Phone: calendar intro text smaller */
+@media (max-width: 600px) {
+  .calendar-sub { font-size: 0.72rem; line-height: 1.5; margin-bottom: 12px; }
+}
