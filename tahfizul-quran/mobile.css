@@ -403,5 +403,5 @@
 }
 @keyframes announceScroll {
   from { transform: translateX(100vw); }
-  to { transform: translateX(-100%); }
+  to { transform: translateX(-50%); }
 }
