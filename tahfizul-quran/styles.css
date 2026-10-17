@@ -2776,3 +2776,23 @@ ul { list-style: none; }
 .card.red p { color: #B71923; }
 .card.green p { color: #138A45; }
 .card.brown p { color: #5A3021; }
+
+/* Desktop green quote band: the English line is one long line that scrolls across */
+@media (min-width: 601px) {
+  .verse-banner { position: relative; overflow: hidden; }
+  .verse-banner > p:last-of-type {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    white-space: nowrap;
+    margin: 0;
+    animation: verseScroll 14s linear infinite;
+  }
+}
+@keyframes verseScroll {
+  from { transform: translate(100vw, -50%); }
+  to { transform: translate(-100%, -50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .verse-banner > p:last-of-type { animation: none; }
+}
