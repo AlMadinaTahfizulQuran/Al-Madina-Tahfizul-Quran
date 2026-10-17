@@ -67,7 +67,7 @@
 /* Menu button sits just to the right of the nameplate, on the navy bar (top and
    sticky). Phones only. */
 @media (max-width: 600px) {
-  .main-nav { position: relative; z-index: auto; height: 37px; }
+  .main-nav { position: relative; z-index: 50; height: 37px; }
   .main-nav .nav-toggle { position: absolute; left: calc(50% + 74px); top: 50%; transform: translateY(-50%); width: 34px; height: 28px; padding: 0; display: flex; align-items: center; justify-content: center; font-size: 1rem; line-height: 1; border: 1.5px solid var(--gold); border-radius: 5px; }
 }
 
@@ -77,4 +77,10 @@
   #stickyCloneHeader .logo-nameplate { top: 0; }
   #stickyCloneHeader .np-line1 { font-size: 0.55rem; line-height: 1.15; }
   #stickyCloneHeader .np-line2 { font-size: 0.68rem; line-height: 1.15; }
+}
+
+/* Phone menu: when opened, the links drop down below the bar on a navy panel */
+@media (max-width: 600px) {
+  .main-nav .nav-grid.open { position: absolute; top: 100%; left: 0; right: 0; display: flex !important; flex-direction: column; background: var(--navy); z-index: 60; box-shadow: 0 6px 14px rgba(0,0,0,0.25); }
+  .main-nav .nav-grid.open a { display: block; padding: 12px 20px; font-size: 0.8rem; }
 }
