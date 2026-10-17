@@ -2986,3 +2986,10 @@ ul { list-style: none; }
   .footer-copyright { grid-column: 1 / -1; text-align: center; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); padding-top: 22px; border-top: 1px solid rgba(213, 163, 62, 0.3); }
   .footer-bottom { justify-content: center; }
 }
+
+/* Desktop About page: thinner green section at the bottom */
+@media (min-width: 901px) {
+  .about-bottom-cta { padding: 18px 8%; }
+  .about-bottom-cta-content h3 { margin: 0 0 6px; }
+  .about-bottom-cta-subtitle { margin: 0 0 10px; }
+}
