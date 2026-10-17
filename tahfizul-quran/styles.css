@@ -2770,3 +2770,9 @@ ul { list-style: none; }
   .slide-3-card p, .slide-3-card .hero-eyebrow { color: var(--red) !important; opacity: 1 !important; }
   .slide-4-card p, .slide-4-card .hero-eyebrow { color: var(--brown) !important; opacity: 1 !important; }
 }
+
+/* Course cards: body text matches each card's heading colour */
+.card.navy p { color: #1D3264; }
+.card.red p { color: #B71923; }
+.card.green p { color: #138A45; }
+.card.brown p { color: #5A3021; }
