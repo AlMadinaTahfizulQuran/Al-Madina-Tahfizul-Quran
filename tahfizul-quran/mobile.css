@@ -343,3 +343,8 @@
   .nav-toggle, #navToggleClone { display: none !important; }
   .logo-nameplate { cursor: pointer; }
 }
+
+/* Phone: small gold down arrow after "Complex" shows the nameplate opens the menu */
+@media (max-width: 600px) {
+  .logo-nameplate .np-line2::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 5px; vertical-align: middle; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #D5A33E; }
+}
