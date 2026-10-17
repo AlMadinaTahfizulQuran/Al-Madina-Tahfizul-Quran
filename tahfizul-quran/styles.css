@@ -2726,7 +2726,7 @@ ul { list-style: none; }
   }
 }
 
-/* Desktop: nameplate sits flush against the bottom of the banner image */
+/* Desktop: nameplate sits 1px lower than its original position */
 @media (min-width: 901px) {
-  .logo-overlap-wrap .logo-nameplate { top: -21px; }
+  .logo-overlap-wrap .logo-nameplate { top: 1px; }
 }
