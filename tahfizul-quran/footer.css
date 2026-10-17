@@ -61,7 +61,7 @@ footer.site-footer .sf-inner {
 .sf-contact a:hover { color: #B8862A; text-decoration: underline; text-underline-offset: 4px; }
 footer.site-footer a:focus-visible,
 footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; outline-offset: 3px; border-radius: 4px; }
-.sf-bottom { background: #D5A33E; border-top: 1px solid #B8862A; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 8% 14px; padding-right: 96px; font-size: 0.78rem; letter-spacing: 0.04em; color: #1a2a56; }
+.sf-bottom { background: #F5F0E8; border-top: 1px solid #D5A33E; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 8% 14px; padding-right: 96px; font-size: 0.78rem; letter-spacing: 0.04em; color: #1a2a56; }
 .sf-copy, .sf-designed { margin: 0; }
 .sf-designed span { color: #1a2a56; font-weight: 700; }
 .scroll-top-btn { background: #1a2a56 !important; color: #D5A33E !important; border: 1.5px solid #D5A33E !important; border-radius: 6px; font-size: 1.2rem; }
