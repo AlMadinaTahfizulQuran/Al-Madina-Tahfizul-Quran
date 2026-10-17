@@ -123,3 +123,10 @@
   .slide-3-card p, .slide-3-card .hero-eyebrow { color: var(--red) !important; }
   .slide-4-card p, .slide-4-card .hero-eyebrow { color: var(--brown) !important; }
 }
+
+/* Course cards on phones: text runs closer to the card edges */
+@media (max-width: 600px) {
+  .card h3 { padding: 0 14px; }
+  .card p { padding: 0 14px; }
+  .card-link { margin-left: 14px; }
+}
