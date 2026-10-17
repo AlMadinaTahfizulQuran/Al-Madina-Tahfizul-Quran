@@ -132,3 +132,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   .sf-contact { gap: 6px; }
 }
+
+/* Desktop footer: thinner (less padding above and below) */
+@media (min-width: 901px) {
+  footer.site-footer .sf-inner { padding: 22px 8%; gap: 28px; }
+}
