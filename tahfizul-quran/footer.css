@@ -237,3 +237,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-links li { text-align: left; }
   .sf-contact li { justify-content: flex-start; text-align: left; }
 }
+
+/* Phone footer: smaller email */
+@media (max-width: 600px) {
+  .sf-contact a[href^="mailto"] { font-size: 0.66rem; }
+}
