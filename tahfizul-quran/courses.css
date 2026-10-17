@@ -22,5 +22,5 @@
   .courses-bottom-cta { padding: 6px 8%; }
   .courses-bottom-cta-content h2 { font-size: 1.4rem; margin: 0 0 6px 0; }
   .courses-bottom-cta-content p { font-size: 0.85rem; margin: 0 0 12px 0; }
-  .courses-bottom-cta-btn { padding: 4px 10px; font-size: 0.5rem; }
+  .courses-bottom-cta-btn { padding: 0 10px; font-size: 0.5rem; line-height: 1.2; }
 }
