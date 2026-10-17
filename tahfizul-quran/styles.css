@@ -2855,7 +2855,7 @@ ul { list-style: none; }
 
 /* Arabic inside the quote track is smaller than the English */
 @media (min-width: 601px) {
-  .verse-banner .verse-track .arabic { font-size: 0.85em; position: relative; top: 0.12em; }
+  .verse-banner .verse-track .arabic { font-size: 0.85em; position: relative; top: 0.25em; }
 }
 
 /* English line of the quote track: Cormorant Garamond */
