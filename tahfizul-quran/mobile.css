@@ -419,3 +419,13 @@
   .about-hero-left { padding: 28px 6% 32px; background: #FAF6F2; }
   .about-hero-left .about-hero-pattern { display: none; }
 }
+
+/* Phone About page: the About text sits on top of the photo */
+@media (max-width: 600px) {
+  .about-hero { position: relative !important; display: block !important; min-height: 520px !important; overflow: hidden !important; }
+  .about-hero-right { position: absolute !important; inset: 0 !important; width: 100% !important; height: 100% !important; order: 0 !important; z-index: 0 !important; }
+  .about-hero-image { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+  .about-hero-left { position: relative !important; z-index: 1 !important; background: transparent !important; padding: 28px 6% !important; }
+  .about-hero-content { background: rgba(251, 248, 240, 0.9) !important; padding: 18px !important; border-radius: 4px !important; margin-top: 150px !important; width: 74% !important; }
+  .about-hero-left { padding-left: 0 !important; padding-right: 26% !important; }
+}
