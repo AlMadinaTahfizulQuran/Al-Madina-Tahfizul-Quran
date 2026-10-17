@@ -303,3 +303,11 @@
 @media (max-width: 600px) {
   .card .card-link { display: inline-flex; align-items: center; justify-content: center; width: auto; align-self: center; margin: 0 auto; white-space: nowrap; gap: 8px; padding: 10px 20px; border-radius: 4px; background: #087A43; color: #ffffff; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; text-decoration: none; min-height: 0; }
 }
+
+/* Phone course cards: Explore course button takes each card's colour */
+@media (max-width: 600px) {
+  .card.navy .card-link { background: #1D3264; }
+  .card.red .card-link { background: #B71923; }
+  .card.green .card-link { background: #138A45; }
+  .card.brown .card-link { background: #5A3021; }
+}
