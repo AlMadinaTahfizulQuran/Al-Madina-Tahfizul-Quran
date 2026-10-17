@@ -269,3 +269,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (max-width: 600px) {
   .sf-identity .sf-logo { width: 130px; height: 130px; }
 }
+
+/* Phone footer: less white space between logo, icons and columns */
+@media (max-width: 600px) {
+  footer.site-footer .sf-inner { gap: 12px 14px; padding: 16px 5% 12px; }
+  .sf-identity .sf-social { margin-top: 10px; }
+  .sf-col .sf-heading { margin: 0 0 10px; }
+}
