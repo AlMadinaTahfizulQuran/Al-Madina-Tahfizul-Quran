@@ -277,5 +277,5 @@
   .about-text-overlay { position: absolute; left: 14%; top: 36%; width: 62%; color: #1a2a56; }
   .about-title { font-size: 1rem; line-height: 1.15; margin: 0 0 6px; }
   .about-body { font-size: 0.62rem; line-height: 1.45; }
-  .about-cta-btn { position: absolute; left: 14%; bottom: 36px; margin: 0; }
+  .about-cta-btn { position: absolute; left: 14%; bottom: 60px; margin: 0; padding: 7px 14px; font-size: 0.62rem; }
 }
