@@ -3024,3 +3024,10 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .edu-content-section { padding-top: 24px; }
 }
+
+/* Educational Content hero (desktop): more crop and smaller text */
+@media (min-width: 901px) {
+  .edu-hero-img { height: 360px; }
+  .edu-hero-title { font-size: 3cqw; }
+  .edu-hero-sub { font-size: 1.15cqw; }
+}
