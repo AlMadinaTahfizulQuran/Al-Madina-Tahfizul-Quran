@@ -355,3 +355,8 @@
   .logo-overlap-wrap .np-line2 { font-size: 0.8rem; }
   .logo-overlap-wrap .logo-nameplate { padding: 4px 12px 5px; }
 }
+
+/* Phone: nameplate moved a little to the right */
+@media (max-width: 600px) {
+  .logo-overlap-wrap .logo-nameplate { left: calc(50% + 8px); }
+}
