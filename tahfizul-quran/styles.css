@@ -3050,3 +3050,9 @@ ul { list-style: none; }
 
 /* About page: remove the Arabic and Qur'an is a light text on the photo */
 .about-hero-text-overlay { display: none !important; }
+
+/* Courses page (desktop): remove the small Our Courses label; heading in gold */
+@media (min-width: 601px) {
+  .courses-hero-eyebrow { display: none !important; }
+  .courses-hero h1 { color: #D5A33E !important; }
+}
