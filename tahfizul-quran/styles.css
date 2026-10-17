@@ -2862,3 +2862,9 @@ ul { list-style: none; }
 @media (min-width: 601px) {
   .verse-banner .verse-track .english { font-family: 'Cinzel', Georgia, serif; font-style: normal; font-weight: 600; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
 }
+
+/* Desktop About Us: show the whole image, no cropping. The section takes the image's proportions. */
+@media (min-width: 901px) {
+  .about-teaser { aspect-ratio: 1978 / 795; min-height: 0; }
+  .about-bg { background-size: 100% 100%; background-position: center; }
+}
