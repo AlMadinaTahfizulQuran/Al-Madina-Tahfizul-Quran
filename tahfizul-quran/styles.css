@@ -2973,3 +2973,10 @@ ul { list-style: none; }
   .footer-social-ig svg { fill: none; stroke: currentColor; stroke-width: 2; }
   .footer-social-ig { margin-left: 2px; }
 }
+
+/* Desktop footer: social icons sit under the brand block, not in the bottom bar */
+@media (min-width: 901px) {
+  .footer-social-row { display: flex; gap: 14px; margin-top: 16px; }
+  .footer-brand .footer-social { width: 22px; height: 22px; }
+  .footer-brand .footer-social-ig { margin-left: 0; }
+}
