@@ -457,3 +457,9 @@
   .about-work-divider::before { content: '\25C6'; color: #D5A33E; font-size: 0.6rem; }
   .about-work-divider .divider-diamond { font-size: 0.6rem; color: #D5A33E; }
 }
+
+/* Phone About page: Our Work heading and divider centred */
+@media (max-width: 600px) {
+  .about-work-title { text-align: center !important; }
+  .about-work-divider { margin-left: -8% !important; margin-right: auto !important; }
+}
