@@ -153,3 +153,19 @@
   .verse-banner p:last-child { font-size: 0.75rem; }
   .verse-diamond { font-size: 0.75rem; }
 }
+
+/* Green quote band on phones: a lighter green highlight slides across it */
+@media (max-width: 600px) {
+  .verse-banner {
+    background: linear-gradient(100deg, var(--green) 0%, var(--green) 35%, #3fb47a 50%, var(--green) 65%, var(--green) 100%);
+    background-size: 250% 100%;
+    animation: verseShine 5s linear infinite;
+  }
+}
+@keyframes verseShine {
+  from { background-position: 100% 0; }
+  to { background-position: 0% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .verse-banner { animation: none; }
+}
