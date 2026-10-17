@@ -789,7 +789,7 @@ ul { list-style: none; }
   max-width: 340px;
   display: none;
 }
-.about-text-panel p { font-size: 0.95rem; }
+.about-text-panel p { font-size: 0.85rem; }
 .about-cta-btn {
   position: absolute;
   left: 10%;
