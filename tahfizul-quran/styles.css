@@ -2967,3 +2967,9 @@ ul { list-style: none; }
   .footer-social:hover { opacity: 0.75; }
   .footer-social svg { width: 100%; height: 100%; fill: currentColor; }
 }
+
+/* Desktop footer: Instagram icon (outline style). Link to be added. */
+@media (min-width: 901px) {
+  .footer-social-ig svg { fill: none; stroke: currentColor; stroke-width: 2; }
+  .footer-social-ig { margin-left: 2px; }
+}
