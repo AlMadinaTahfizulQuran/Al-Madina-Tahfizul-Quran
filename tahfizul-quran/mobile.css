@@ -245,3 +245,8 @@
   .verse-banner .verse-track .arabic { top: 0.2em; position: relative; }
   .verse-banner .verse-track .english { font-family: 'Cinzel', Georgia, serif; font-style: normal; font-weight: 600; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.06em; }
 }
+
+/* Green strip (phone): a little taller */
+@media (max-width: 600px) {
+  .verse-banner { min-height: 58px; }
+}
