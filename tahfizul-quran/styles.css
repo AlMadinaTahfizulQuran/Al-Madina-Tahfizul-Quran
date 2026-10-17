@@ -792,7 +792,7 @@ ul { list-style: none; }
 .about-text-panel p { font-size: 0.85rem; }
 .about-cta-btn {
   position: absolute;
-  left: 10%;
+  left: 12%;
   bottom: 140px;
   z-index: 3;
   background: var(--brown);
