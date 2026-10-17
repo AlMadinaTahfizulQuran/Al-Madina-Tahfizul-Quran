@@ -185,3 +185,16 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-bottom .sf-designed { width: auto; border-top: 0; padding-top: 0; margin: 0; text-align: left; }
   .sf-bottom .sf-designed::before { content: '◆'; color: #D5A33E; font-size: 0.55rem; margin-right: 14px; vertical-align: middle; }
 }
+
+/* Phone footer: Explore on the left and Contact Us on the right, with tighter line spacing */
+@media (max-width: 600px) {
+  footer.site-footer .sf-inner { grid-template-columns: 1fr 1fr; gap: 20px 14px; }
+  .sf-identity { grid-column: 1 / -1; }
+  .sf-links a, .sf-contact a { min-height: 26px; }
+  .sf-links { gap: 0; }
+  .sf-contact { gap: 6px; }
+  .sf-contact li { font-size: 0.82rem; gap: 6px; }
+  .sf-contact svg { width: 14px; height: 14px; }
+  .sf-links a { font-size: 0.85rem; }
+  .sf-heading { font-size: 1.05rem; }
+}
