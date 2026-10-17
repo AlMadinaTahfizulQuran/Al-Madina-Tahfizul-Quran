@@ -2738,6 +2738,17 @@ ul { list-style: none; }
 /* Desktop: the nameplate sits in the middle of the sticky menu bar, the same as at
    the top of the page (its top edge 17px into the bar, hanging below it) */
 @media (min-width: 901px) {
-  #stickyCloneHeader .logo-nameplate { top: 14px; }
+  #stickyCloneHeader .logo-nameplate { top: 0; }
   #stickyCloneHeader .nav-right { grid-column: 3; }
+}
+
+/* Desktop, scrolled: no green strip. The phone numbers sit on the navy menu bar instead. */
+@media (min-width: 901px) {
+  #stickyCloneHeader .top-bar { position: absolute; top: 0; left: 0; right: 0; height: 36px; padding: 0 20px; background: transparent; display: flex; justify-content: space-between; align-items: center; pointer-events: none; z-index: 2; }
+  #stickyCloneHeader .top-bar a { pointer-events: auto; }
+}
+
+/* Desktop, scrolled menu: space the menu buttons out evenly */
+@media (min-width: 901px) {
+  #stickyCloneHeader .main-nav a { padding: 8px 13px; }
 }
