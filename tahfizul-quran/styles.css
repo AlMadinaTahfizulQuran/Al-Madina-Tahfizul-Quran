@@ -2732,7 +2732,7 @@ ul { list-style: none; }
 }
 
 /* Nameplate when it is moved into the sticky navy bar on scroll (all screens) */
-#stickyCloneHeader .main-nav { position: relative; }
+#stickyCloneHeader .main-nav { position: relative; z-index: auto; }
 #stickyCloneHeader .logo-nameplate { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin: 0; z-index: 9999; }
 
 /* Desktop: the nameplate sits in the middle of the sticky menu bar, the same as at
