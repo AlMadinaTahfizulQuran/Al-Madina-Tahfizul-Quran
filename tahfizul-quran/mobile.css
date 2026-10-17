@@ -405,3 +405,9 @@
   from { transform: translateX(100vw); }
   to { transform: translateX(-50%); }
 }
+
+/* Phone, scrolling: announcement box pinned to the green bar */
+@media (max-width: 600px) {
+  #stickyCloneHeader .main-nav { position: relative; }
+  #stickyCloneHeader .sticky-announce { top: 0 !important; bottom: auto !important; height: 12px; }
+}
