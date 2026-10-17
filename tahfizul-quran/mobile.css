@@ -348,3 +348,10 @@
 @media (max-width: 600px) {
   .logo-nameplate .np-line2::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 5px; vertical-align: middle; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #D5A33E; }
 }
+
+/* Phone: nameplate a bit bigger */
+@media (max-width: 600px) {
+  .logo-overlap-wrap .np-line1 { font-size: 0.62rem; }
+  .logo-overlap-wrap .np-line2 { font-size: 0.8rem; }
+  .logo-overlap-wrap .logo-nameplate { padding: 4px 12px 5px; }
+}
