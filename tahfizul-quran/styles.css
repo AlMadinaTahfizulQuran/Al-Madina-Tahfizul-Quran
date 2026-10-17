@@ -793,7 +793,7 @@ ul { list-style: none; }
 .about-cta-btn {
   position: absolute;
   left: 10%;
-  bottom: 40px;
+  bottom: 100px;
   z-index: 3;
   background: var(--brown);
   color: var(--white);
