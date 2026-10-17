@@ -1,0 +1,27 @@
+/* Mobile-only styles. Loaded only at phone width (see media attribute on the
+   stylesheet link in each page), so desktop/web rendering is never affected.
+   Add mobile overrides here; do not edit styles.css for mobile changes. */
+
+/* Top bar: keep the two contact lines compact so the logo doesn't cover them */
+@media (max-width: 600px) {
+  .top-bar { flex-direction: row; justify-content: center; gap: 4px 12px; padding: 8px 10px; font-size: 0.65rem; }
+  .top-bar a { margin-right: 8px; font-size: 0.65rem; }
+  .country-flag { font-size: 0.8rem; }
+}
+
+/* Logo sits below the top bar instead of on top of it */
+@media (max-width: 600px) {
+  .logo-overlap-wrap { top: 95px; }
+}
+
+/* Hero card: fit inside the screen with a 12px gutter. The more specific
+   selector is needed because each slide card has its own 460px width rule. */
+@media (max-width: 600px) {
+  .hero-single .hero-card { width: auto !important; max-width: none !important; left: 12px !important; right: 12px !important; }
+  .hero-single .hero-cta-btn { white-space: nowrap; }
+}
+
+/* Courses subtitle wraps instead of running off the screen */
+@media (max-width: 600px) {
+  .courses-subtitle { font-size: 0.9rem; padding: 0 5%; }
+}
