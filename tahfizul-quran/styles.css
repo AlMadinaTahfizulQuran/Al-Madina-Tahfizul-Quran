@@ -2879,3 +2879,8 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .about-text-frame { display: none; }
 }
+
+/* Desktop: thin gold strip between the About Us section and the calendar */
+@media (min-width: 901px) {
+  .about-teaser { border-bottom: 4px solid var(--gold); }
+}
