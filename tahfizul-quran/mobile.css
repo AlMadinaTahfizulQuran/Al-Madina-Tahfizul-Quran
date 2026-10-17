@@ -24,7 +24,7 @@
    background image shows. Sizes are set here because the desktop rules are
    sized for large screens. */
 @media (max-width: 600px) {
-  .hero-single { min-height: 380px !important; }
+  .hero-single { min-height: 270px !important; }
   .hero-single .hero-card { left: 12px !important; right: 12px !important; width: auto !important; max-width: none !important; top: auto !important; bottom: 28px !important; transform: none !important; padding: 10px 14px !important; }
   .hero-single .hero-card h1 { font-size: 16px !important; line-height: 1.2 !important; margin-bottom: 6px !important; }
   .hero-single .hero-card p { font-size: 11.5px !important; margin-bottom: 6px !important; }
@@ -33,7 +33,6 @@
   .hero-single .hero-arrow { width: 26px !important; height: 26px !important; font-size: 0.7rem !important; }
   .hero-single .hero-dots { bottom: 14px !important; }
   .hero-single-slide:nth-child(3) { background-position: 95% center; }
-  .hero-single-slide:nth-child(1) { background-size: auto 108%; background-position: center bottom; }
 }
 
 /* Courses subtitle wraps instead of running off the screen */
