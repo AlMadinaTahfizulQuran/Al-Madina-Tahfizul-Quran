@@ -2945,3 +2945,12 @@ ul { list-style: none; }
   .footer-links .arrow-icon { display: none; }
   .footer-bottom { background: #111f40; border-top: 1px solid var(--gold); }
 }
+
+/* Desktop footer layout: brand block on the left, three link columns beside it, headings aligned along the top */
+@media (min-width: 901px) {
+  .site-footer { grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; align-items: start; }
+  .footer-brand { text-align: left; }
+  .footer-logo-wrap { justify-content: flex-start; }
+  .footer-brand-name { font-size: 1.15rem; }
+  .footer-brand .footer-tagline { max-width: 300px; }
+}
