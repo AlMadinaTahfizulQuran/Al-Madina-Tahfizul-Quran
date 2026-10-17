@@ -31,3 +31,9 @@
 @media (max-width: 600px) {
   .courses-subtitle { font-size: 0.9rem; padding: 0 5%; }
 }
+
+/* Course cards: the artwork is portrait (1100x1430). Give each card that shape
+   and stretch the image to fill it, so the whole design shows on phones. */
+@media (max-width: 600px) {
+  .card { height: auto; aspect-ratio: 1100 / 1430; background-size: 100% 100%; }
+}
