@@ -154,24 +154,22 @@
   .verse-diamond { font-size: 0.75rem; }
 }
 
-/* Green quote band on phones: a thin green strip travels across it */
+/* Green quote band on phones: the English line is one long line that scrolls across */
 @media (max-width: 600px) {
-  .verse-banner { position: relative; overflow: hidden; }
-  .verse-banner::before {
-    content: '';
+  .verse-banner { overflow: hidden; }
+  .verse-banner > p:last-of-type {
     position: absolute;
     left: 0;
-    bottom: 0;
-    height: 4px;
-    width: 35%;
-    background: #3fb47a;
-    animation: verseStrip 3.5s linear infinite;
+    top: 50%;
+    white-space: nowrap;
+    margin: 0;
+    animation: verseScroll 12s linear infinite;
   }
 }
-@keyframes verseStrip {
-  from { transform: translateX(-100%); }
-  to { transform: translateX(300%); }
+@keyframes verseScroll {
+  from { transform: translate(100vw, -50%); }
+  to { transform: translate(-100%, -50%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .verse-banner::before { animation: none; display: none; }
+  .verse-banner > p:last-of-type { animation: none; }
 }
