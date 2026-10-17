@@ -3036,3 +3036,8 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .edu-hero-img { height: 340px; }
 }
+
+/* Educational Content hero (desktop): a little more crop */
+@media (min-width: 901px) {
+  .edu-hero-img { height: 320px; }
+}
