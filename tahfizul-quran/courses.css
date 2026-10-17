@@ -16,3 +16,8 @@
 @media (max-width: 900px) {
   .cb-text { display: none; }
 }
+
+/* Courses 3 and 4: headings and text lower, eyebrow stays above the divider */
+@media (min-width: 901px) {
+  .cb-wrap:nth-child(7) .cb-title, .cb-wrap:nth-child(8) .cb-title { margin-top: 6.8cqw; }
+}
