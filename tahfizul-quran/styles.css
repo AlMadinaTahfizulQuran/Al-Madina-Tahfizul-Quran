@@ -2908,3 +2908,27 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .footer-bottom { padding: 14px 8%; }
 }
+
+/* Desktop bottom bar: navy band with a thin gold top line, centred small capitals */
+@media (min-width: 901px) {
+  .footer-bottom {
+    background: #1a2a56;
+    background-image: none;
+    border-top: 1px solid var(--gold);
+    padding: 16px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .footer-bottom { justify-content: center !important; }
+  .footer-bottom .designed-text { margin: 0 0 0 0 !important; }
+  .footer-bottom .copyright-text, .footer-bottom .designed-text { flex: none !important; width: auto !important; }
+  .footer-bottom .copyright-ornament { display: none; }
+  .footer-bottom .designed-by { color: rgba(255, 255, 255, 0.6); }
+  .footer-bottom .designed-name { color: var(--gold); font-weight: 700; }
+}
