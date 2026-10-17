@@ -320,7 +320,7 @@
 
 /* Phone: 2026 Calendar heading slightly smaller */
 @media (max-width: 600px) {
-  .calendar-feature h2 { font-size: 1.5rem; }
+  .calendar-feature h2 { font-size: 1.2rem; }
 }
 
 /* Phone course cards: slightly smaller, centred */
