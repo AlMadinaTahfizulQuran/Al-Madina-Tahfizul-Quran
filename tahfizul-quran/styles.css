@@ -3041,3 +3041,9 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .edu-hero-img { height: 320px; }
 }
+
+/* Desktop calendar arrows: transparent, no circle, white chevrons (same as phone) */
+@media (min-width: 601px) {
+  .pdf-arrow { background: transparent; border: none; border-radius: 0; color: #ffffff; box-shadow: none; }
+  .pdf-arrow:hover { background: transparent; color: var(--gold); }
+}
