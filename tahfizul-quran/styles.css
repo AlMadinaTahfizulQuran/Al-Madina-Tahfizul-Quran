@@ -797,10 +797,10 @@ ul { list-style: none; }
   z-index: 3;
   background: var(--brown);
   color: var(--white);
-  padding: 6px 14px;
+  padding: 10px 22px;
   font-weight: 700;
   letter-spacing: 0.4px;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
 }
 .about-cta-btn:hover { opacity: 0.9; }
@@ -1883,10 +1883,10 @@ ul { list-style: none; }
   gap: 10px;
   background: #087A43;
   color: var(--white);
-  padding: 6px 14px;
+  padding: 10px 22px;
   border-radius: 6px;
   font-weight: 700;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
