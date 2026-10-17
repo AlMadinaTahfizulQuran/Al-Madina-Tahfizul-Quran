@@ -204,3 +204,27 @@
   from { transform: translate(0, -50%); }
   to { transform: translate(-25%, -50%); }
 }
+
+/* Quote band: gold diamonds and text in a looping track (new markup) */
+@media (max-width: 600px) {
+  .verse-banner::before { content: none; animation: none; }
+  .verse-banner .verse-track {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--white);
+    transform: translateY(-50%);
+    animation: verseTrack 18s linear infinite;
+  }
+  .verse-banner .verse-item { display: flex; align-items: center; gap: 12px; padding-right: 12px; }
+  .verse-banner .verse-track .verse-diamond { color: var(--gold); opacity: 1; font-size: 0.9em; }
+  .verse-banner .verse-track .english { font-family: var(--font-heading); }
+}
+@keyframes verseTrack {
+  from { transform: translate(0, -50%); }
+  to { transform: translate(-25%, -50%); }
+}
