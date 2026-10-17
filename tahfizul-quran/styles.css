@@ -3019,3 +3019,8 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .edu-hero-img { height: 390px; object-fit: cover; object-position: center; }
 }
+
+/* Educational Content (desktop): Educational Library moved up under the hero */
+@media (min-width: 901px) {
+  .edu-content-section { padding-top: 24px; }
+}
