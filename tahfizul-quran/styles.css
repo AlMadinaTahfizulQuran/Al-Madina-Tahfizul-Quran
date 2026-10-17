@@ -2998,3 +2998,8 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .about-bottom-cta-btn { padding: 8px 16px; font-size: 0.7rem; }
 }
+
+/* Desktop scrolled menu: tighter links so Course Fees clears the phone number */
+@media (min-width: 901px) {
+  #stickyCloneHeader .main-nav a { padding: 8px 9px; }
+}
