@@ -435,3 +435,8 @@
 @media (max-width: 600px) {
   .about-hero-text-overlay { display: none !important; }
 }
+
+/* Phone About page: thin gold border around the text box */
+@media (max-width: 600px) {
+  .about-hero-content { border: 1px solid #D5A33E !important; }
+}
