@@ -130,3 +130,8 @@
   .card p { padding: 0 52px; }
   .card-link { margin-left: 52px; }
 }
+
+/* Course card titles centred on phones */
+@media (max-width: 600px) {
+  .card h3 { text-align: center; }
+}
