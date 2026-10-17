@@ -371,3 +371,8 @@
   .logo-overlap-wrap .logo-nameplate { max-width: none; white-space: nowrap; }
   .logo-overlap-wrap .logo-nameplate .np-line1, .logo-overlap-wrap .logo-nameplate .np-line2 { white-space: nowrap; }
 }
+
+/* Phone: nameplate a little longer on the right side */
+@media (max-width: 600px) {
+  .logo-overlap-wrap .logo-nameplate { padding-right: 34px; }
+}
