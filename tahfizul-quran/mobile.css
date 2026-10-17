@@ -376,3 +376,10 @@
 @media (max-width: 600px) {
   .logo-overlap-wrap .logo-nameplate { padding-right: 34px; }
 }
+
+/* Phone: scrolling nameplate matches the top nameplate (size, text, padding, position) */
+@media (max-width: 600px) {
+  #stickyCloneHeader .logo-nameplate { max-width: none; white-space: nowrap; left: calc(50% + 32px); top: 0; padding: 4px 26px 5px; border-radius: 0 0 5px 5px; line-height: 1.15; }
+  #stickyCloneHeader .logo-nameplate .np-line1 { font-size: 0.62rem; line-height: 1.15; }
+  #stickyCloneHeader .logo-nameplate .np-line2 { font-size: 0.8rem; line-height: 1.15; }
+}
