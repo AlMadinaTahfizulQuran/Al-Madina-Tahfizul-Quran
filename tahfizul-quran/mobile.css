@@ -376,3 +376,8 @@
 @media (max-width: 600px) {
   .logo-overlap-wrap .logo-nameplate { padding-right: 34px; }
 }
+
+/* Phone: nameplate background gold */
+@media (max-width: 600px) {
+  .logo-overlap-wrap .logo-nameplate { background: #D5A33E; }
+}
