@@ -311,3 +311,9 @@
   .card.green .card-link { background: #138A45; }
   .card.brown .card-link { background: #5A3021; }
 }
+
+/* Phone course cards: Explore course button text white */
+@media (max-width: 600px) {
+  .card.navy .card-link, .card.red .card-link, .card.green .card-link, .card.brown .card-link { color: #ffffff; }
+  .card.navy .card-link span, .card.red .card-link span, .card.green .card-link span, .card.brown .card-link span { color: #ffffff; }
+}
