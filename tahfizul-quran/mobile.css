@@ -428,7 +428,7 @@
   .about-hero-right { background: #FAF6F2; }
   .about-hero-left { position: relative !important; z-index: 1 !important; background: transparent !important; padding: 28px 6% !important; }
   .about-hero-content { background: rgba(251, 248, 240, 0.9) !important; padding: 18px !important; border-radius: 4px !important; margin-top: 20px !important; width: 74% !important; }
-  .about-hero-left { padding-left: 0 !important; padding-right: 26% !important; }
+  .about-hero-left { padding-left: 4% !important; padding-right: 22% !important; }
 }
 
 /* Phone About page: remove the Arabic and English overlay text on the photo */
