@@ -332,3 +332,8 @@
 @media (max-width: 600px) {
   .calendar-sub { font-size: 0.72rem; line-height: 1.5; margin-bottom: 12px; }
 }
+
+/* Phone: Download full calendar button smaller */
+@media (max-width: 600px) {
+  .download-btn { width: auto; padding: 8px 16px; font-size: 0.68rem; min-height: 0; }
+}
