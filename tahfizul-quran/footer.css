@@ -252,3 +252,9 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (max-width: 600px) {
   .sf-at { display: block; }
 }
+
+/* Phone footer: email split into two neat rows, never broken mid-word */
+@media (max-width: 600px) {
+  .sf-contact a[href^="mailto"] { display: inline-flex; flex-direction: column; align-items: flex-start; white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+  .sf-at { display: block; }
+}
