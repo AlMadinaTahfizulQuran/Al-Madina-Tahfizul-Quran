@@ -1,0 +1,16 @@
+/* Contact page form section. Only the contact page loads this file. */
+.contact-form-section { background: #faf6f2; padding: 56px 8% 72px; }
+.contact-form-container { max-width: 880px; margin: 0 auto; text-align: center; }
+.contact-form-container > .contact-eyebrow { font-size: 0.75rem; font-weight: 900; color: #D5A33E; margin-bottom: 14px; line-height: 1.4; }
+.contact-eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; color: #D5A33E; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 14px; }
+.contact-eyebrow::before, .contact-eyebrow::after { content: '◆'; font-size: 0.6rem; }
+.contact-form-container h2 { font-family: var(--font-heading); font-weight: 700; font-size: 2.4rem; line-height: 1.2; color: #1a2a56; margin-bottom: 12px; }
+.contact-form-container > p { font-size: 1.02rem; color: #4a4a4a; line-height: 1.65; margin-bottom: 32px; }
+.google-form-container { background: #FFFBF5; border: 1px solid rgba(213, 163, 62, 0.35); border-radius: 10px; box-shadow: 0 12px 32px rgba(26, 42, 86, 0.08); padding: 12px; overflow: hidden; }
+.google-form-container iframe { display: block; border-radius: 6px; background: #fff; }
+@media (max-width: 600px) {
+  .contact-form-section { padding: 36px 5% 48px; }
+  .contact-form-container h2 { font-size: 1.8rem; }
+  .contact-form-container > p { font-size: 0.95rem; margin-bottom: 24px; }
+  .google-form-container { padding: 6px; }
+}
