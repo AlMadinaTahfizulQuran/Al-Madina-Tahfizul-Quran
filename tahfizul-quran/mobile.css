@@ -33,6 +33,7 @@
   .hero-single .hero-arrow { width: 26px !important; height: 26px !important; font-size: 0.7rem !important; }
   .hero-single .hero-dots { bottom: 14px !important; }
   .hero-single-slide:nth-child(3) { background-position: 95% center; }
+  .hero-single-slide:nth-child(4) { background-position: 0% center; }
 }
 
 /* Courses subtitle wraps instead of running off the screen */
