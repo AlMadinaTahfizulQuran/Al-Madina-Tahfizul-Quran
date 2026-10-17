@@ -135,3 +135,8 @@
 @media (max-width: 600px) {
   .card h3 { text-align: center; }
 }
+
+/* Explore Course links centred on phones */
+@media (max-width: 600px) {
+  .card-link { display: block; width: 100%; text-align: center; margin-left: 0; margin-right: 0; align-self: stretch; }
+}
