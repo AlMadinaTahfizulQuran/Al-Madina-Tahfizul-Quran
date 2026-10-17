@@ -216,3 +216,9 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (max-width: 600px) {
   .sf-identity .sf-brand-name, .sf-identity .sf-brand .sf-divider { display: none; }
 }
+
+/* Phone footer: smaller link and contact text */
+@media (max-width: 600px) {
+  .sf-links a { font-size: 0.76rem; }
+  .sf-contact li { font-size: 0.74rem; }
+}
