@@ -54,3 +54,10 @@
   .card p { flex: none; margin: 0 0 16px; padding: 0 24px; }
   .card-link { margin-top: auto; margin-left: 24px; padding: 12px 0; }
 }
+
+/* Banner: phone version of the image with the white middle removed, so the
+   two mosque pictures sit closer to the logo. Desktop keeps the original image. */
+@media (max-width: 600px) {
+  .header-banner { height: 67px; background: url('images/headerbg-mobile.png') center top / cover no-repeat; }
+  .header-banner .header-bg-img { display: none; }
+}
