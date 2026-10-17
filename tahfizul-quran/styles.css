@@ -2860,5 +2860,5 @@ ul { list-style: none; }
 
 /* English line of the quote track: Cormorant Garamond */
 @media (min-width: 601px) {
-  .verse-banner .verse-track .english { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.15em; }
+  .verse-banner .verse-track .english { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.35em; }
 }
