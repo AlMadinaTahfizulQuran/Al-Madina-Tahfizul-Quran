@@ -1,4 +1,7 @@
 /* Course Fees page. Only this page loads this file. */
+.fees-confirm { display: flex; align-items: flex-start; gap: 10px; width: 100%; max-width: 300px; margin: 0 0 18px; text-align: left; font-size: 0.9rem; line-height: 1.5; color: #333; cursor: pointer; }
+.fees-confirm input { margin-top: 3px; width: 18px; height: 18px; flex-shrink: 0; accent-color: #1a2a56; cursor: pointer; }
+.fees-btn.is-disabled { background: #b9bfcc; cursor: not-allowed; pointer-events: none; }
 .fees-main { background: #faf6f2; padding: 56px 8% 72px; }
 .fees-intro { text-align: center; max-width: 720px; margin: 0 auto 40px; }
 .fees-eyebrow { display: flex; align-items: center; justify-content: center; gap: 12px; color: #D5A33E; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; margin-bottom: 14px; }

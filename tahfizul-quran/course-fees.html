@@ -86,7 +86,11 @@
       </div>
       <p class="fees-label">Pay via SumUp</p>
       <p class="fees-lead-small">Using your phone? Tap below to open the payment page.</p>
-      <a class="fees-btn" href="https://pay.sumup.com/b2c/QR14NMDI?utm_campaign=pdf&amp;utm_medium=print&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Pay course fees</a>
+      <label class="fees-confirm">
+        <input type="checkbox" id="feesConfirm" required>
+        <span>I have spoken to a member of staff about the course fee I am paying.</span>
+      </label>
+      <a class="fees-btn is-disabled" id="feesPayBtn" data-href="https://pay.sumup.com/b2c/QR14NMDI?utm_campaign=pdf&amp;utm_medium=print&amp;utm_source=qr" target="_blank" rel="noopener noreferrer" aria-disabled="true">Pay course fees</a>
       <p class="fees-btn-note">Opens SumUp’s payment page.</p>
     </div>
 
@@ -167,5 +171,24 @@
 </div>
 <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
 <script src="script.js"></script>
+<script>
+  (function () {
+    var box = document.getElementById('feesConfirm');
+    var btn = document.getElementById('feesPayBtn');
+    function sync() {
+      if (box.checked) {
+        btn.href = btn.getAttribute('data-href');
+        btn.classList.remove('is-disabled');
+        btn.setAttribute('aria-disabled', 'false');
+      } else {
+        btn.removeAttribute('href');
+        btn.classList.add('is-disabled');
+        btn.setAttribute('aria-disabled', 'true');
+      }
+    }
+    box.addEventListener('change', sync);
+    sync();
+  })();
+</script>
 </body>
 </html>
