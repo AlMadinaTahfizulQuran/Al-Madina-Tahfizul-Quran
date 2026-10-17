@@ -2954,3 +2954,9 @@ ul { list-style: none; }
   .footer-brand-name { font-size: 1.15rem; }
   .footer-brand .footer-tagline { max-width: 300px; }
 }
+
+/* Desktop footer: three blocks. Brand, contact, and one Explore block with both link lists side by side */
+@media (min-width: 901px) {
+  .site-footer { grid-template-columns: 1.2fr 1fr 1.4fr; }
+  .footer-explore-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+}
