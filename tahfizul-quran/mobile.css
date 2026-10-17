@@ -301,5 +301,5 @@
 
 /* Phone course cards: Explore course links styled as the site's standard buttons */
 @media (max-width: 600px) {
-  .card .card-link { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 20px; border-radius: 4px; background: #087A43; color: #ffffff; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; text-decoration: none; min-height: 0; }
+  .card .card-link { display: inline-flex; align-items: center; justify-content: center; width: auto; align-self: center; margin: 0 auto; white-space: nowrap; gap: 8px; padding: 10px 20px; border-radius: 4px; background: #087A43; color: #ffffff; font-weight: 700; font-size: 0.8rem; letter-spacing: 0.5px; text-transform: uppercase; text-decoration: none; min-height: 0; }
 }
