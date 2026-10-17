@@ -44,3 +44,13 @@
 @media (max-width: 600px) {
   .card { height: auto; aspect-ratio: 1100 / 1430; background-size: 100% 100%; }
 }
+
+/* Course card text: titles sit below the arch line, body text takes its natural
+   height, and each call-to-action is pinned to the bottom of its card so the
+   three parts line up across all four cards. */
+@media (max-width: 600px) {
+  .card { padding-bottom: 20px; }
+  .card h3 { margin: 56px 0 10px; padding: 0 24px; }
+  .card p { flex: none; margin: 0 0 16px; padding: 0 24px; }
+  .card-link { margin-top: auto; margin-left: 24px; padding: 12px 0; }
+}
