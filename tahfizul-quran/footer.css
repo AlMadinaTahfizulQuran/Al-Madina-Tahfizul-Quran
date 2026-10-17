@@ -112,3 +112,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-identity .sf-brand .sf-divider { margin-left: auto; margin-right: auto; }
   .sf-identity .sf-social { justify-content: center; width: 100%; }
 }
+
+/* Footer email on one line (desktop) */
+@media (min-width: 901px) {
+  .sf-contact a[href^="mailto"] { white-space: nowrap; overflow-wrap: normal; word-break: normal; }
+}
