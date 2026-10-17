@@ -3031,3 +3031,8 @@ ul { list-style: none; }
   .edu-hero-title { font-size: 3cqw; }
   .edu-hero-sub { font-size: 1.15cqw; }
 }
+
+/* Educational Content hero (desktop): slightly more crop */
+@media (min-width: 901px) {
+  .edu-hero-img { height: 340px; }
+}
