@@ -317,3 +317,8 @@
   .card.navy .card-link, .card.red .card-link, .card.green .card-link, .card.brown .card-link { color: #ffffff; }
   .card.navy .card-link span, .card.red .card-link span, .card.green .card-link span, .card.brown .card-link span { color: #ffffff; }
 }
+
+/* Phone: 2026 Calendar heading slightly smaller */
+@media (max-width: 600px) {
+  .calendar-feature h2 { font-size: 1.5rem; }
+}
