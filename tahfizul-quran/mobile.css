@@ -399,7 +399,7 @@
   #stickyCloneHeader .top-bar { display: none; }
   #stickyCloneHeader .main-nav { height: 12px; }
   #stickyCloneHeader .sticky-announce { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden; z-index: 1; pointer-events: none; }
-  #stickyCloneHeader .sticky-announce span { display: inline-block; white-space: nowrap; line-height: 12px; color: #ffffff; font-size: 0.42rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; animation: announceScroll 20s linear infinite; }
+  #stickyCloneHeader .sticky-announce span { display: inline-block; white-space: nowrap; line-height: 12px; color: #ffffff; font-size: 0.42rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; animation: announceScroll 35s linear infinite; }
 }
 @keyframes announceScroll {
   from { transform: translateX(100vw); }
