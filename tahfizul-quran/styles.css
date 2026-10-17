@@ -2752,3 +2752,6 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   #stickyCloneHeader .main-nav a { padding: 8px 13px; }
 }
+
+/* Nameplate is a link to the homepage. Its parent ignores clicks, so re-enable them here. */
+.logo-nameplate { pointer-events: auto; cursor: pointer; }
