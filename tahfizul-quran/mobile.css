@@ -10,11 +10,11 @@
 }
 
 /* Logo sits inside the banner image, above the menu. The nameplate is placed
-   centred on the navy menu bar (the bar is 58px tall), at every phone width. */
+   hanging from the navy menu bar like the desktop version, at every phone width. */
 @media (max-width: 600px) {
   .logo-overlap-wrap { top: 0; left: 0; width: 100%; height: 100%; transform: none; }
   .logo-overlap-wrap .header-logo { width: 66px; }
-  .logo-overlap-wrap .logo-nameplate { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); margin: 0; padding: 3px 10px 4px; }
+  .logo-overlap-wrap .logo-nameplate { position: absolute; top: calc(100% + 20px); left: 50%; transform: translateX(-50%); margin: 0; padding: 3px 10px 4px; border-radius: 0 0 12px 12px; }
   .logo-overlap-wrap .np-line1 { font-size: 0.6rem; }
   .logo-overlap-wrap .np-line2 { font-size: 0.75rem; }
 }
