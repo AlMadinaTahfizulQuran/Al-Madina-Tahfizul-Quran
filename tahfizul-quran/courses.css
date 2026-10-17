@@ -27,7 +27,7 @@
 
 /* Courses page: Ready to begin button matches the site's standard buttons (desktop) */
 @media (min-width: 901px) {
-  .courses-bottom-cta-btn { background: #ffffff; color: #1a2a56; padding: 10px 4px 10px 20px; border-radius: 4px; font-size: 0.8rem; letter-spacing: 0.5px; line-height: 1.2; }
+  .courses-bottom-cta-btn { background: #ffffff; color: #1a2a56; padding: 10px 20px; border-radius: 4px; font-size: 0.8rem; letter-spacing: 0.5px; line-height: 1.2; }
   .courses-bottom-cta-btn:hover { opacity: 0.9; }
 }
 
