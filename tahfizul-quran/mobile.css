@@ -126,9 +126,9 @@
 
 /* Course cards on phones: more space on both sides of the text */
 @media (max-width: 600px) {
-  .card h3 { padding: 0 52px; }
-  .card p { padding: 0 52px; }
-  .card-link { margin-left: 52px; }
+  .card h3 { padding: 0 64px; }
+  .card p { padding: 0 64px; }
+  .card-link { margin-left: 64px; }
 }
 
 /* Course card titles centred on phones */
