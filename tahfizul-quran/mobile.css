@@ -468,7 +468,7 @@
 @media (max-width: 600px) {
   .about-our-work { padding-top: 0 !important; }
   .about-our-work-container { padding-top: 0 !important; }
-  .about-work-title { margin-top: -10px !important; }
+  .about-work-title { margin-top: 6px !important; }
 }
 
 /* Phone About page: divider sits underneath the heading */
