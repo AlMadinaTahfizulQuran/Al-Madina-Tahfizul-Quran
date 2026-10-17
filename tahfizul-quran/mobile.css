@@ -103,3 +103,8 @@
 @media (max-width: 600px) {
   :root { --font-body: 'Nunito Sans', Arial, Helvetica, sans-serif; }
 }
+
+/* Scrolled nameplate: keep the text centred, as at the top of the page (phones only) */
+@media (max-width: 600px) {
+  #stickyCloneHeader .logo-nameplate { text-align: center; }
+}
