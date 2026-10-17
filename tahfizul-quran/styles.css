@@ -3014,3 +3014,8 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .edu-hero-text { display: none; }
 }
+
+/* Educational Content hero (desktop): crop a little from the top and bottom */
+@media (min-width: 901px) {
+  .edu-hero-img { height: 390px; object-fit: cover; object-position: center; }
+}
