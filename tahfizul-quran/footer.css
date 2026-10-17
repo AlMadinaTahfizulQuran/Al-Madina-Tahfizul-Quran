@@ -36,10 +36,10 @@ footer.site-footer .sf-inner {
   align-items: start;
 }
 .sf-identity .sf-brand { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; color: #1a2a56; }
-.sf-logo { width: 72px; height: 72px; object-fit: contain; flex-shrink: 0; }
+.sf-logo { width: 88px; height: 88px; object-fit: contain; flex-shrink: 0; }
 .sf-brand-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; line-height: 1.3; color: #1a2a56; }
 .sf-tagline { margin: 8px 0 10px; font-size: 0.92rem; line-height: 1.6; color: #3d4a6b; max-width: 340px; }
-.sf-social { display: flex; gap: 12px; }
+.sf-social { display: flex; gap: 12px; margin-top: 22px; }
 .sf-social-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid #D5A33E; border-radius: 50%; color: #B8862A; transition: background 0.3s ease, color 0.3s ease; }
 .sf-social-link svg { width: 16px; height: 16px; fill: currentColor; }
 .sf-social-link:nth-child(2) svg { fill: none; stroke: currentColor; stroke-width: 2; }
@@ -68,7 +68,7 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 }
 @media (max-width: 600px) {
   footer.site-footer .sf-inner { grid-template-columns: 1fr; gap: 20px; padding: 24px 5% 20px; }
-  .sf-logo { width: 66px; height: 66px; }
+  .sf-logo { width: 76px; height: 76px; }
   .sf-links a, .sf-contact a { min-height: 40px; }
   .sf-social-link { width: 44px; height: 44px; }
   .sf-bottom { flex-direction: column; text-align: center; padding: 10px 5% 70px; }
