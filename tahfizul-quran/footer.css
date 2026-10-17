@@ -145,3 +145,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-identity .sf-social-link { width: 30px; height: 30px; }
   .sf-identity .sf-social-link svg { width: 14px; height: 14px; }
 }
+
+/* Desktop: smaller social circles with less space between them */
+@media (min-width: 901px) {
+  .sf-identity .sf-social { gap: 8px; margin-top: 18px; }
+  .sf-identity .sf-social-link { width: 24px; height: 24px; }
+  .sf-identity .sf-social-link svg { width: 12px; height: 12px; }
+}
