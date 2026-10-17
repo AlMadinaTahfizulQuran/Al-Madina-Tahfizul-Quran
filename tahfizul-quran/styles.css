@@ -2762,3 +2762,11 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .main-nav a.logo-nameplate, #stickyCloneHeader .main-nav a.logo-nameplate { padding: 6px 20px 8px; }
 }
+
+/* Desktop slider text: solid, matching each slide's heading colour */
+@media (min-width: 601px) {
+  .slide-1-card p, .slide-1-card .hero-eyebrow { color: var(--green) !important; opacity: 1 !important; }
+  .slide-2-card p, .slide-2-card .hero-eyebrow { color: var(--navy) !important; opacity: 1 !important; }
+  .slide-3-card p, .slide-3-card .hero-eyebrow { color: var(--red) !important; opacity: 1 !important; }
+  .slide-4-card p, .slide-4-card .hero-eyebrow { color: var(--brown) !important; opacity: 1 !important; }
+}
