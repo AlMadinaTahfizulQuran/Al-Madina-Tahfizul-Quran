@@ -476,3 +476,9 @@
   .about-work-title { margin-bottom: 0 !important; line-height: 1.1 !important; }
   .about-work-divider { margin-top: -8px !important; }
 }
+
+/* Phone About page: divider line fills the width, diamonds at each end, centred under the heading */
+@media (max-width: 600px) {
+  .about-work-divider .divider-line { flex: 1 1 auto !important; width: auto !important; max-width: none !important; min-width: 0; }
+  .about-work-divider .divider-diamond { flex: none; }
+}
