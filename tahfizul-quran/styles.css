@@ -2960,3 +2960,10 @@ ul { list-style: none; }
   .site-footer { grid-template-columns: 1.2fr 1fr 1.4fr; }
   .footer-explore-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 }
+
+/* Desktop footer: Facebook icon in the bottom bar */
+@media (min-width: 901px) {
+  .footer-social { display: inline-flex; width: 18px; height: 18px; color: var(--gold); transition: opacity 0.3s ease; }
+  .footer-social:hover { opacity: 0.75; }
+  .footer-social svg { width: 100%; height: 100%; fill: currentColor; }
+}
