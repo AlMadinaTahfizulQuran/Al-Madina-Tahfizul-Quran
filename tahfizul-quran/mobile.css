@@ -114,3 +114,8 @@
   :root { --text-dark: #1a2a56; }
   .courses-subtitle, .card p, .edu-library-header p, .edu-card-desc, .about-cta-subtitle, .contact-info-card p, .contact-form-container > p { color: #1a2a56; }
 }
+
+/* Slider text on phones: solid navy so it reads clearly over the photo */
+@media (max-width: 600px) {
+  .hero-single .hero-card p, .hero-single .hero-card .hero-eyebrow { color: #1a2a56 !important; opacity: 1 !important; }
+}
