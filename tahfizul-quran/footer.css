@@ -91,3 +91,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-identity .sf-brand { align-items: center; text-align: center; }
   .sf-identity .sf-brand .sf-divider { margin-left: auto; margin-right: auto; }
 }
+
+/* Footer: taller on desktop, more breathing room */
+@media (min-width: 901px) {
+  footer.site-footer .sf-inner { padding: 48px 8%; gap: 40px; }
+  .sf-contact { gap: 14px; }
+  .sf-links a { min-height: 44px; }
+}
