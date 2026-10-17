@@ -137,3 +137,11 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   footer.site-footer .sf-inner { padding: 22px 8%; gap: 28px; }
 }
+
+/* Desktop: logo, social icons and the other columns end on one line */
+@media (min-width: 901px) {
+  .sf-identity .sf-logo { width: 85px; height: 85px; }
+  .sf-identity .sf-social { margin-top: 12px; }
+  .sf-identity .sf-social-link { width: 30px; height: 30px; }
+  .sf-identity .sf-social-link svg { width: 14px; height: 14px; }
+}
