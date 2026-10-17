@@ -140,3 +140,8 @@
 @media (max-width: 600px) {
   .card-link { display: block; width: 100%; text-align: center; margin-left: 0; margin-right: 0; align-self: stretch; }
 }
+
+/* Course card descriptions justified on phones, so both edges line up */
+@media (max-width: 600px) {
+  .card p { text-align: justify; hyphens: auto; }
+}
