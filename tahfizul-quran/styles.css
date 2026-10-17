@@ -2816,6 +2816,7 @@ ul { list-style: none; }
     left: 0;
     white-space: pre;
     font-size: 1.05rem;
+    font-family: var(--font-heading);
     font-weight: bold;
     color: var(--white);
     transform: translateY(-50%);
