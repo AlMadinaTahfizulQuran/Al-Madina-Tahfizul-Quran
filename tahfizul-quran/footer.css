@@ -85,3 +85,9 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-identity .sf-brand-name { white-space: nowrap; font-size: 1.05rem; }
   .sf-identity .sf-logo { width: 128px; height: 128px; }
 }
+
+/* Footer identity: name, divider and logo centred in their column (desktop) */
+@media (min-width: 901px) {
+  .sf-identity .sf-brand { align-items: center; text-align: center; }
+  .sf-identity .sf-brand .sf-divider { margin-left: auto; margin-right: auto; }
+}
