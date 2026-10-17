@@ -81,6 +81,6 @@
 
 /* Phone menu: when opened, the links drop down below the bar on a navy panel */
 @media (max-width: 600px) {
-  .main-nav .nav-grid.open { position: absolute; top: 100%; left: 0; right: 0; display: flex !important; flex-direction: column; background: var(--navy); z-index: 60; box-shadow: 0 6px 14px rgba(0,0,0,0.25); }
+  .main-nav .nav-grid.open { position: absolute; top: 100%; left: 0; right: 0; display: flex !important; flex-direction: column; background: rgba(26, 42, 86, 0.82); backdrop-filter: blur(4px); z-index: 60; box-shadow: 0 6px 14px rgba(0,0,0,0.18); }
   .main-nav .nav-grid.open a { display: block; padding: 12px 20px; font-size: 0.8rem; }
 }
