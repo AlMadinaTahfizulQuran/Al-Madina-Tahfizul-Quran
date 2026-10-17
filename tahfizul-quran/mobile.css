@@ -248,7 +248,7 @@
 
 /* Green strip (phone): a little taller */
 @media (max-width: 600px) {
-  .verse-banner { min-height: 58px; }
+  .verse-banner { min-height: 52px; }
 }
 
 /* Green strip (phone): moved up slightly */
