@@ -363,5 +363,5 @@
 
 /* Phone: nameplate wider */
 @media (max-width: 600px) {
-  .logo-overlap-wrap .logo-nameplate { padding: 4px 22px 5px; }
+  .logo-overlap-wrap .logo-nameplate { padding: 4px 26px 5px; }
 }
