@@ -70,3 +70,10 @@
   .main-nav { position: relative; z-index: auto; height: 37px; }
   .main-nav .nav-toggle { position: absolute; left: calc(50% + 74px); top: 50%; transform: translateY(-50%); padding: 4px 8px; }
 }
+
+/* Phone: the moved nameplate keeps its phone size inside the sticky bar */
+@media (max-width: 600px) {
+  #stickyCloneHeader .logo-nameplate { padding: 3px 5px 4px; border-radius: 0 0 5px 5px; }
+  #stickyCloneHeader .np-line1 { font-size: 0.55rem; line-height: 1.15; }
+  #stickyCloneHeader .np-line2 { font-size: 0.68rem; line-height: 1.15; }
+}

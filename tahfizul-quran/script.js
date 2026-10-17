@@ -40,6 +40,19 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('scroll', updateOnScroll);
   updateOnScroll();
 
+  // Move the real nameplate into the navy menu bar when that bar is showing on
+  // scroll, and back into the banner at the top, so it scrolls with the menu.
+  const logoWrap = document.querySelector('.logo-overlap-wrap');
+  const nameplate = document.querySelector('.logo-nameplate');
+  const stickyNav = document.querySelector('#stickyCloneHeader .main-nav');
+  function syncNameplate() {
+    if (!nameplate || !logoWrap || !stickyNav || !cloneHeader) return;
+    const target = cloneHeader.classList.contains('visible') ? stickyNav : logoWrap;
+    if (nameplate.parentNode !== target) target.appendChild(nameplate);
+  }
+  window.addEventListener('scroll', syncNameplate);
+  syncNameplate();
+
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', function () {
       window.scrollTo({ top: 0, behavior: 'smooth' });

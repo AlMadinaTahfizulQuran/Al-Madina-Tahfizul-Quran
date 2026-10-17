@@ -2730,3 +2730,7 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   .logo-overlap-wrap .logo-nameplate { top: -4px; }
 }
+
+/* Nameplate when it is moved into the sticky navy bar on scroll (all screens) */
+#stickyCloneHeader .main-nav { position: relative; }
+#stickyCloneHeader .logo-nameplate { position: absolute; left: 50%; top: 100%; transform: translateX(-50%); margin: 0; z-index: 9999; }
