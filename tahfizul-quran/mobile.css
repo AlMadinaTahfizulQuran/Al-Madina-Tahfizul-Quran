@@ -108,3 +108,9 @@
 @media (max-width: 600px) {
   #stickyCloneHeader .logo-nameplate { text-align: center; }
 }
+
+/* Regular text on phones: navy instead of the light grey */
+@media (max-width: 600px) {
+  :root { --text-dark: #1a2a56; }
+  .courses-subtitle, .card p, .edu-library-header p, .edu-card-desc, .about-cta-subtitle, .contact-info-card p, .contact-form-container > p { color: #1a2a56; }
+}
