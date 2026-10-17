@@ -49,7 +49,7 @@ footer.site-footer .sf-inner {
 .sf-heading { font-family: var(--font-heading); font-weight: 700; font-size: 1.2rem; color: #1a2a56; margin: 0; line-height: 1.2; }
 .sf-identity .sf-brand-name { display: block; margin-bottom: 0; }
 .sf-identity .sf-brand .sf-divider { margin: 8px 0 14px; }
-.sf-divider { display: block; position: relative; width: 56px; height: 1px; background: #D5A33E; margin: 8px 0 10px; }
+.sf-divider { display: block; position: relative; width: 96px; height: 1px; background: #D5A33E; margin: 8px 0 10px; }
 .sf-divider::after { content: '◆'; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); font-size: 0.55rem; color: #D5A33E; background: #F5F0E8; padding: 0 4px; }
 .sf-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
 .sf-links a { display: inline-flex; align-items: center; min-height: 36px; color: #1a2a56; text-decoration: none; font-size: 0.95rem; }
