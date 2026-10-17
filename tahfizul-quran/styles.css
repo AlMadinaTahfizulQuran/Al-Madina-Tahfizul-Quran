@@ -3003,3 +3003,8 @@ ul { list-style: none; }
 @media (min-width: 901px) {
   #stickyCloneHeader .main-nav a { padding: 8px 9px; }
 }
+
+/* Educational Content page (desktop): thinner hero image, centred crop */
+@media (min-width: 901px) {
+  .edu-hero-img { height: 240px; object-fit: cover; object-position: center; }
+}
