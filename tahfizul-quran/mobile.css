@@ -389,12 +389,7 @@
   .main-nav, #stickyCloneHeader .main-nav { background: var(--green); box-shadow: none; height: 12px; }
 }
 
-/* Phone, scrolling: Bangladesh number stays on the top strip; UK number moves onto the green menu bar */
+/* Phone, scrolling: both phone numbers stacked on the left */
 @media (max-width: 600px) {
-  #stickyCloneHeader .top-bar { flex-direction: row; justify-content: flex-start; align-items: center; padding: 3px 10px; }
-  #stickyCloneHeader .top-right { display: none; }
-  #stickyCloneHeader .main-nav { height: 16px; }
-  #stickyCloneHeader .sticky-uk { display: block; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); color: #ffffff; font-size: 0.55rem; font-weight: 700; white-space: nowrap; line-height: 1; }
-  #stickyCloneHeader .sticky-uk a { color: #ffffff; }
-  #stickyCloneHeader .sticky-uk .country-flag { font-size: 0.5rem; }
+  #stickyCloneHeader .top-bar { flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; padding: 4px 10px; }
 }
