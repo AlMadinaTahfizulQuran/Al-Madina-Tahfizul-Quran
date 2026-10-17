@@ -279,3 +279,8 @@
   .about-body { font-size: 0.62rem; line-height: 1.45; }
   .about-cta-btn { position: absolute; left: 14%; bottom: 60px; margin: 0; padding: 7px 14px; font-size: 0.62rem; }
 }
+
+/* Phone: thin gold line between the calendar and About Us, matching desktop */
+@media (max-width: 600px) {
+  .about-teaser { border-bottom: 4px solid var(--gold); }
+}
