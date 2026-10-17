@@ -405,3 +405,8 @@
   from { transform: translateX(100vw); }
   to { transform: translateX(-100%); }
 }
+
+/* Phone: all buttons use the same 4px corner curve as the Explore course buttons */
+@media (max-width: 600px) {
+  .btn, .about-cta-btn, .download-btn, .hero-cta-btn, .courses-bottom-cta-btn, .card-link, .fees-btn { border-radius: 4px !important; }
+}
