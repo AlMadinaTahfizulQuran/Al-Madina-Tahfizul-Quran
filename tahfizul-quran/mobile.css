@@ -9,9 +9,14 @@
   .country-flag { font-size: 0.8rem; }
 }
 
-/* Logo sits below the top bar instead of on top of it */
+/* Logo sits inside the banner image, above the menu. The nameplate stays
+   just below the menu. The two-class selector beats the desktop logo width rule. */
 @media (max-width: 600px) {
-  .logo-overlap-wrap { top: 95px; }
+  .logo-overlap-wrap { top: 0; transform: translate(-50%, 0); }
+  .logo-overlap-wrap .header-logo { width: 60px; }
+  .logo-overlap-wrap .logo-nameplate { margin-top: 68px; padding: 3px 10px 4px; }
+  .logo-overlap-wrap .np-line1 { font-size: 0.6rem; }
+  .logo-overlap-wrap .np-line2 { font-size: 0.75rem; }
 }
 
 /* Hero card: fit inside the screen with a 12px gutter. The more specific
