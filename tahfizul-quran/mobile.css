@@ -272,7 +272,7 @@
 
 /* About Us (phone): taller image, zoomed into the white panel, with the text over the panel */
 @media (max-width: 600px) {
-  .about-bg { height: 300px; aspect-ratio: auto; background-size: auto 125%; background-position: 3% 35%; }
+  .about-bg { height: 300px; aspect-ratio: auto; background-size: auto 105%; background-position: 3% 35%; }
   .about-text-frame { display: block; position: absolute; inset: 0; width: auto; height: auto; aspect-ratio: auto; background: none; padding: 0; z-index: 2; pointer-events: none; }
   .about-text-overlay { position: absolute; left: 7%; top: 38%; width: 66%; color: #1a2a56; }
   .about-title { font-size: 1rem; line-height: 1.15; margin: 0 0 6px; }
