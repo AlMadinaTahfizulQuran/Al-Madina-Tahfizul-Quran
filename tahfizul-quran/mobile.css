@@ -282,5 +282,5 @@
 
 /* Phone: thin gold line between the calendar and About Us, matching desktop */
 @media (max-width: 600px) {
-  .about-teaser { border-bottom: 6px solid var(--gold); }
+  .about-teaser { border-bottom: 8px solid var(--gold); }
 }
