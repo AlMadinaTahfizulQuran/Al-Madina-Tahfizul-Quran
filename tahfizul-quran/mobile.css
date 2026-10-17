@@ -154,22 +154,23 @@
   .verse-diamond { font-size: 0.75rem; }
 }
 
-/* Green quote band on phones: the English line is one long line that scrolls across */
+/* Green quote band on phones: the Arabic and English lines scroll together as one line */
 @media (max-width: 600px) {
-  .verse-banner { overflow: hidden; }
-  .verse-banner > p:last-of-type {
+  .verse-banner { overflow: hidden; position: relative; }
+  .verse-banner > p.arabic, .verse-banner > p:last-of-type {
     position: absolute;
-    left: 0;
     top: 50%;
     white-space: nowrap;
     margin: 0;
-    animation: verseScroll 12s linear infinite;
+    animation: verseScrollBoth 12s linear infinite;
   }
+  .verse-banner > p.arabic { left: 0; }
+  .verse-banner > p:last-of-type { left: 140px; }
 }
-@keyframes verseScroll {
+@keyframes verseScrollBoth {
   from { transform: translate(100vw, -50%); }
-  to { transform: translate(-100%, -50%); }
+  to { transform: translate(-100vw, -50%); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .verse-banner > p:last-of-type { animation: none; }
+  .verse-banner > p.arabic, .verse-banner > p:last-of-type { animation: none; }
 }
