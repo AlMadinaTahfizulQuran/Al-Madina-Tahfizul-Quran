@@ -797,7 +797,7 @@ ul { list-style: none; }
   z-index: 3;
   background: var(--brown);
   color: var(--white);
-  padding: 12px 26px;
+  padding: 8px 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
   font-size: 0.7rem;
