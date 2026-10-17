@@ -124,9 +124,9 @@
   .slide-4-card p, .slide-4-card .hero-eyebrow { color: var(--brown) !important; }
 }
 
-/* Course cards on phones: text runs closer to the card edges */
+/* Course cards on phones: more space on both sides of the text */
 @media (max-width: 600px) {
-  .card h3 { padding: 0 14px; }
-  .card p { padding: 0 14px; }
-  .card-link { margin-left: 14px; }
+  .card h3 { padding: 0 36px; }
+  .card p { padding: 0 36px; }
+  .card-link { margin-left: 36px; }
 }
