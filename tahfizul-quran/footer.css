@@ -227,3 +227,15 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (max-width: 600px) {
   .sf-heading { font-size: 0.9rem; }
 }
+
+/* Phone footer: Explore and Contact Us columns centred within their halves */
+@media (max-width: 600px) {
+  .sf-col { text-align: center; }
+  .sf-col .sf-heading { display: block; }
+  .sf-col .sf-divider { margin-left: auto; margin-right: auto; }
+  .sf-col .sf-heading { margin-left: auto; margin-right: auto; width: fit-content; }
+  .sf-links { justify-items: center; }
+  .sf-links li { text-align: center; }
+  .sf-contact li { justify-content: center; text-align: left; }
+  .sf-col .sf-heading::after { left: 50%; }
+}
