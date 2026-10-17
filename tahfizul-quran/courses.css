@@ -8,8 +8,8 @@
   .cb-eyebrow { font-size: 0.85cqw; font-weight: 700; letter-spacing: 0.3em; color: var(--cb-color); margin: 0 0 0.6cqw; }
   .cb-title { font-family: var(--font-heading); font-weight: 700; font-size: 3.2cqw; line-height: 1.1; color: var(--cb-color); margin: 4.6cqw 0 0.8cqw; }
   .cb-sub { font-size: 1.35cqw; line-height: 1.4; color: var(--cb-color); margin: 0 0 1.2cqw; }
-  .cb-body { font-size: 1.05cqw; line-height: 1.6; color: #2c3a55; margin: 0 0 1.6cqw; }
-  .cb-checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 0.7cqw 2cqw; font-size: 1cqw; color: #2c3a55; }
+  .cb-body { font-size: 1.05cqw; line-height: 2; color: #2c3a55; margin: 0 0 1.6cqw; }
+  .cb-checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 1.5cqw 2cqw; font-size: 1cqw; color: #2c3a55; }
   .cb-checks li { position: relative; padding-left: 2.2cqw; line-height: 1.4; }
   .cb-checks li::before { content: '✓'; position: absolute; left: 0; color: var(--cb-color); font-weight: 700; }
 }
@@ -17,7 +17,3 @@
   .cb-text { display: none; }
 }
 
-/* Courses 3 and 4: headings and text lower, eyebrow stays above the divider */
-@media (min-width: 901px) {
-  .cb-wrap:nth-child(7) .cb-title, .cb-wrap:nth-child(8) .cb-title { margin-top: 6.8cqw; }
-}
