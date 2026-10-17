@@ -358,5 +358,5 @@
 
 /* Phone: nameplate moved a little to the right */
 @media (max-width: 600px) {
-  .logo-overlap-wrap .logo-nameplate { left: calc(50% + 16px); }
+  .logo-overlap-wrap .logo-nameplate { left: calc(50% + 17px); }
 }
