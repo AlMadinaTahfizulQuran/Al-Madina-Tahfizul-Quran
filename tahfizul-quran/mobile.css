@@ -322,3 +322,8 @@
 @media (max-width: 600px) {
   .calendar-feature h2 { font-size: 1.5rem; }
 }
+
+/* Phone course cards: slightly smaller, centred */
+@media (max-width: 600px) {
+  .card { max-width: 88%; margin: 0 auto; }
+}
