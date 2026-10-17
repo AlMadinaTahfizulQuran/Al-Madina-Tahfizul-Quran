@@ -105,3 +105,10 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 .sf-col .sf-heading::after { content: '◆'; position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%); font-size: 0.55rem; color: #D5A33E; background: #F5F0E8; padding: 0 4px; }
 .sf-col .sf-divider { display: none; }
 .sf-identity .sf-brand .sf-divider { display: block; width: 100%; margin: 8px 0 14px; }
+
+/* Phone footer: logo and social icons centred under the name */
+@media (max-width: 600px) {
+  .sf-identity .sf-brand { align-items: center; text-align: center; width: 100%; }
+  .sf-identity .sf-brand .sf-divider { margin-left: auto; margin-right: auto; }
+  .sf-identity .sf-social { justify-content: center; width: 100%; }
+}
