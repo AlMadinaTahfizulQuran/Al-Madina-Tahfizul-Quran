@@ -365,3 +365,9 @@
 @media (max-width: 600px) {
   .logo-overlap-wrap .logo-nameplate { padding: 4px 26px 5px; }
 }
+
+/* Phone: nameplate text stays on its lines and the box is sized to the text */
+@media (max-width: 600px) {
+  .logo-overlap-wrap .logo-nameplate { max-width: none; white-space: nowrap; }
+  .logo-overlap-wrap .logo-nameplate .np-line1, .logo-overlap-wrap .logo-nameplate .np-line2 { white-space: nowrap; }
+}
