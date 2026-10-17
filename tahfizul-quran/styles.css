@@ -2903,3 +2903,8 @@ ul { list-style: none; }
   .footer-links { gap: 6px; }
   .footer-links .arrow-icon { display: none; }
 }
+
+/* Desktop: thin green bar at the end of the page */
+@media (min-width: 901px) {
+  .footer-bottom { padding: 14px 8%; }
+}
