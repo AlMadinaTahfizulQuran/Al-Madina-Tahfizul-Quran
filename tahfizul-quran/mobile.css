@@ -228,3 +228,8 @@
   from { transform: translate(0, -50%); }
   to { transform: translate(-25%, -50%); }
 }
+
+/* Arabic inside the quote track is smaller than the English */
+@media (max-width: 600px) {
+  .verse-banner .verse-track .arabic { font-size: 0.6em; }
+}
