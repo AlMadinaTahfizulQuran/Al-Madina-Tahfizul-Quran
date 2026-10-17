@@ -388,3 +388,8 @@
 @media (max-width: 600px) {
   .main-nav, #stickyCloneHeader .main-nav { background: var(--green); box-shadow: none; height: 12px; }
 }
+
+/* Phone, scrolling: remove the green strip at the top of the sticky header */
+@media (max-width: 600px) {
+  #stickyCloneHeader .top-bar { display: none; }
+}
