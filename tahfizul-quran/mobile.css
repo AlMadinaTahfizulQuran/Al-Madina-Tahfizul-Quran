@@ -410,3 +410,12 @@
 @media (max-width: 600px) {
   .btn, .about-cta-btn, .download-btn, .hero-cta-btn, .courses-bottom-cta-btn, .card-link, .fees-btn { border-radius: 4px !important; }
 }
+
+/* Phone About page: photo first, then the cream text panel below, matching the desktop layout */
+@media (max-width: 600px) {
+  .about-hero { display: flex; flex-direction: column; }
+  .about-hero-right { order: -1; width: 100%; height: 260px; position: relative; }
+  .about-hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .about-hero-left { padding: 28px 6% 32px; background: #FAF6F2; }
+  .about-hero-left .about-hero-pattern { display: none; }
+}
