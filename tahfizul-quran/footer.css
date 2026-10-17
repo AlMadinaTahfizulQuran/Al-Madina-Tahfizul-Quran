@@ -83,7 +83,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 @media (min-width: 901px) {
   footer.site-footer .sf-inner { grid-template-columns: 1.5fr 1fr 1.2fr; }
   .sf-identity .sf-brand-name { white-space: nowrap; font-size: 1.05rem; }
-  .sf-identity .sf-logo { width: 164px; height: 164px; }
+  .sf-identity .sf-logo { width: 140px; height: 140px; }
+  .sf-identity .sf-social { margin-top: 16px; justify-content: center; }
 }
 
 /* Footer identity: name, divider and logo centred in their column (desktop) */
