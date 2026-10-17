@@ -145,3 +145,11 @@
 @media (max-width: 600px) {
   .card p { text-align: justify; hyphens: auto; }
 }
+
+/* Green quote band on phones: thinner, with smaller text */
+@media (max-width: 600px) {
+  .verse-banner { padding: 10px 10px; }
+  .verse-banner .arabic { font-size: 0.95rem; margin-bottom: 4px; }
+  .verse-banner p:last-child { font-size: 0.75rem; }
+  .verse-diamond { font-size: 0.75rem; }
+}
