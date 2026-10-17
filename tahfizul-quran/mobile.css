@@ -463,3 +463,9 @@
   .about-work-title { text-align: center !important; }
   .about-work-divider { margin-left: -8% !important; margin-right: auto !important; }
 }
+
+/* Phone About page: less space between the photo and Our Work heading */
+@media (max-width: 600px) {
+  .about-our-work { padding-top: 0 !important; }
+  .about-our-work-container { padding-top: 12px !important; }
+}
