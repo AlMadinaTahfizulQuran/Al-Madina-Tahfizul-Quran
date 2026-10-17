@@ -1,0 +1,19 @@
+/* Courses page: live text over the four course banners (desktop). Each banner keeps its image proportions, so the text stays on the panel. */
+@media (min-width: 901px) {
+  .cb-wrap { position: relative; container-type: inline-size; }
+  .cb-wrap .course-full-width-img { display: block; width: 100%; height: auto; }
+  .cb-text { position: absolute; top: 15%; width: 56%; color: #1f2a44; }
+  .cb-right .cb-text { left: 38.5%; }
+  .cb-left .cb-text { left: 5.6%; }
+  .cb-eyebrow { font-size: 0.85cqw; font-weight: 700; letter-spacing: 0.3em; color: var(--cb-color); margin: 0 0 0.6cqw; }
+  .cb-rule { display: block; width: 26%; height: 1px; background: var(--cb-color); margin-bottom: 1.6cqw; }
+  .cb-title { font-family: var(--font-heading); font-weight: 700; font-size: 3.2cqw; line-height: 1.1; color: var(--cb-color); margin: 0 0 0.8cqw; }
+  .cb-sub { font-size: 1.35cqw; line-height: 1.4; color: var(--cb-color); margin: 0 0 1.2cqw; }
+  .cb-body { font-size: 1.05cqw; line-height: 1.6; color: #2c3a55; margin: 0 0 1.6cqw; }
+  .cb-checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3, auto); grid-auto-flow: column; gap: 0.7cqw 2cqw; font-size: 1cqw; color: #2c3a55; }
+  .cb-checks li { position: relative; padding-left: 2.2cqw; line-height: 1.4; }
+  .cb-checks li::before { content: '✓'; position: absolute; left: 0; color: var(--cb-color); font-weight: 700; }
+}
+@media (max-width: 900px) {
+  .cb-text { display: none; }
+}
