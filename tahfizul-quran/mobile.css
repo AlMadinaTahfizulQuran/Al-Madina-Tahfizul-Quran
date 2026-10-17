@@ -250,3 +250,8 @@
 @media (max-width: 600px) {
   .verse-banner { min-height: 58px; }
 }
+
+/* Green strip (phone): moved up slightly */
+@media (max-width: 600px) {
+  .verse-banner { margin-top: -14px; position: relative; z-index: 1; }
+}
