@@ -394,7 +394,7 @@
   #stickyCloneHeader .top-bar { flex-direction: row; justify-content: flex-start; align-items: center; padding: 3px 10px; }
   #stickyCloneHeader .top-right { display: none; }
   #stickyCloneHeader .main-nav { height: 16px; }
-  #stickyCloneHeader .sticky-uk { display: block; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #ffffff; font-size: 0.5rem; font-weight: 700; white-space: nowrap; line-height: 1; }
-  #stickyCloneHeader .sticky-uk a { color: #ffffff; font-size: 0.5rem; min-height: 0; }
-  #stickyCloneHeader .sticky-uk .country-flag { font-size: 0.45rem; margin-right: 3px; }
+  #stickyCloneHeader .sticky-uk { display: block; position: absolute; right: 8px; top: 50%; transform: translateY(-50%); color: #ffffff; font-size: 0.55rem; font-weight: 700; white-space: nowrap; line-height: 1; }
+  #stickyCloneHeader .sticky-uk a { color: #ffffff; }
+  #stickyCloneHeader .sticky-uk .country-flag { font-size: 0.5rem; }
 }
