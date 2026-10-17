@@ -454,6 +454,6 @@
   .about-work-title { margin-bottom: 0 !important; }
   .about-work-divider { display: flex !important; align-items: center; gap: 10px; width: calc(100% + 16%); margin: -4px 0 20px -2% !important; }
   .about-work-divider .divider-line { flex: 1; height: 1px; width: auto !important; background: #D5A33E; }
-  .about-work-divider::before { content: 'C6'; color: #D5A33E; font-size: 0.6rem; }
+  .about-work-divider::before { content: '\25C6'; color: #D5A33E; font-size: 0.6rem; }
   .about-work-divider .divider-diamond { font-size: 0.6rem; color: #D5A33E; }
 }
