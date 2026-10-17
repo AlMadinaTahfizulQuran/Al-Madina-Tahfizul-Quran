@@ -30,3 +30,8 @@
   .courses-bottom-cta-btn { background: #D5A33E; color: #1a2a56; padding: 10px 20px; border-radius: 4px; font-size: 0.8rem; letter-spacing: 0.5px; line-height: 1.2; }
   .courses-bottom-cta-btn:hover { opacity: 0.9; }
 }
+
+/* Courses page: more navy space around the Ready to begin text (desktop) */
+@media (min-width: 901px) {
+  .courses-bottom-cta { padding: 24px 8%; }
+}
