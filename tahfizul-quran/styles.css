@@ -793,14 +793,14 @@ ul { list-style: none; }
 .about-cta-btn {
   position: absolute;
   left: 10%;
-  bottom: 100px;
+  bottom: 140px;
   z-index: 3;
   background: var(--brown);
   color: var(--white);
   padding: 12px 26px;
   font-weight: 700;
   letter-spacing: 0.5px;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
 }
 .about-cta-btn:hover { opacity: 0.9; }
