@@ -255,3 +255,8 @@
 @media (max-width: 600px) {
   .verse-banner { margin-top: -14px; position: relative; z-index: 1; }
 }
+
+/* About Us image (phone): show the whole picture, not zoomed in */
+@media (max-width: 600px) {
+  .about-bg { height: auto; aspect-ratio: 1978 / 795; background-size: 100% 100%; }
+}
