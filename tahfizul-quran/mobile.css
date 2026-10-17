@@ -180,7 +180,7 @@
 
 /* Thin gold outline around the green quote band (phones) */
 @media (max-width: 600px) {
-  .verse-banner { box-shadow: inset 0 0 0 1px var(--gold); }
+  .verse-banner { box-shadow: inset 0 0 0 2px var(--gold); }
 }
 
 /* Quote band: the whole line repeats continuously (one copy drawn by CSS, looped seamlessly) */
