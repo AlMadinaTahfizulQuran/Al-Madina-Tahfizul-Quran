@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap');
+
 /* Mobile-only styles. Loaded only at phone width (see media attribute on the
    stylesheet link in each page), so desktop/web rendering is never affected.
    Add mobile overrides here; do not edit styles.css for mobile changes. */
@@ -95,4 +97,9 @@
 @media (max-width: 600px) {
   .courses-eyebrow { font-size: 0.85rem; }
   .courses-header h2 { font-size: 20px; }
+}
+
+/* Regular text font on phones: Nunito Sans. Headings keep Playfair Display. */
+@media (max-width: 600px) {
+  :root { --font-body: 'Nunito Sans', Arial, Helvetica, sans-serif; }
 }
