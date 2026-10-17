@@ -264,3 +264,8 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
   .sf-col .sf-heading { text-align: center; }
   .sf-col .sf-divider { margin-left: auto; margin-right: auto; }
 }
+
+/* Phone footer: bigger logo */
+@media (max-width: 600px) {
+  .sf-identity .sf-logo { width: 130px; height: 130px; }
+}
