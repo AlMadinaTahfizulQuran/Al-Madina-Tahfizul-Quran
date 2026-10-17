@@ -470,3 +470,9 @@
   .about-our-work-container { padding-top: 0 !important; }
   .about-work-title { margin-top: -10px !important; }
 }
+
+/* Phone About page: divider sits underneath the heading */
+@media (max-width: 600px) {
+  .about-work-title { margin-bottom: 10px !important; }
+  .about-work-divider { margin-top: 0 !important; }
+}
