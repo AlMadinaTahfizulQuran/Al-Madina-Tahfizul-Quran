@@ -2726,9 +2726,9 @@ ul { list-style: none; }
   }
 }
 
-/* Desktop: nameplate sits 6px higher than its original position */
+/* Desktop: nameplate sits 4px higher than its original position */
 @media (min-width: 901px) {
-  .logo-overlap-wrap .logo-nameplate { top: -6px; }
+  .logo-overlap-wrap .logo-nameplate { top: -4px; }
 }
 
 /* Nameplate when it is moved into the sticky navy bar on scroll (all screens) */
@@ -2738,6 +2738,6 @@ ul { list-style: none; }
 /* Desktop: the nameplate sits in the middle of the sticky menu bar, the same as at
    the top of the page (its top edge 17px into the bar, hanging below it) */
 @media (min-width: 901px) {
-  #stickyCloneHeader .logo-nameplate { top: 17px; }
+  #stickyCloneHeader .logo-nameplate { top: 14px; }
   #stickyCloneHeader .nav-right { grid-column: 3; }
 }
