@@ -274,8 +274,8 @@
 @media (max-width: 600px) {
   .about-bg { height: 300px; aspect-ratio: auto; background-size: auto 105%; background-position: 3% 35%; }
   .about-text-frame { display: block; position: absolute; inset: 0; width: auto; height: auto; aspect-ratio: auto; background: none; padding: 0; z-index: 2; pointer-events: none; }
-  .about-text-overlay { position: absolute; left: 7%; top: 38%; width: 66%; color: #1a2a56; }
+  .about-text-overlay { position: absolute; left: 14%; top: 36%; width: 62%; color: #1a2a56; }
   .about-title { font-size: 1rem; line-height: 1.15; margin: 0 0 6px; }
   .about-body { font-size: 0.62rem; line-height: 1.45; }
-  .about-cta-btn { position: absolute; left: 7%; bottom: 14px; margin: 0; }
+  .about-cta-btn { position: absolute; left: 14%; bottom: 36px; margin: 0; }
 }
