@@ -2820,7 +2820,7 @@ ul { list-style: none; }
     font-weight: bold;
     color: var(--white);
     transform: translateY(-50%);
-    animation: verseLoop 40s linear infinite;
+    animation: verseLoop 22s linear infinite;
   }
 }
 @keyframes verseLoop {
