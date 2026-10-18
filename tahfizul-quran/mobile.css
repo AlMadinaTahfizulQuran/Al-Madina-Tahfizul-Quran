@@ -692,3 +692,27 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 36px; }
 }
+
+/* Courses page (phone, narrow screens such as a Z Fold front screen): smaller checklist and text kept clear of the arch */
+@media (max-width: 380px) {
+  .cb-checks { font-size: 2.2cqw !important; }
+  .cb-checks li { padding-left: 3.6cqw; }
+  .cb-title { font-size: 3.8cqw !important; }
+  .cb-text { width: 44% !important; }
+  .cb-right .cb-text { left: 54% !important; }
+  .cb-left .cb-text { left: 3% !important; }
+}
+
+/* Narrow phones (under 380px): keep each course's text inside its blank side */
+@media (max-width: 380px) {
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-text { left: 3% !important; width: 46% !important; }
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks { left: 0 !important; }
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-text { left: 52% !important; }
+  .cb-checks { left: 0 !important; }
+}
+
+/* Narrow phones (under 380px): course text sits below each banner image, not over the arch */
+@media (max-width: 380px) {
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-text, .cb-wrap:has(img[src*="Coursebanner2"]) .cb-text, .cb-wrap:has(img[src*="Coursebanner3"]) .cb-text { position: relative !important; top: auto !important; left: auto !important; width: auto !important; padding: 14px 6% 6px; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks, .cb-wrap:has(img[src*="Coursebanner2"]) .cb-checks, .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks { left: 0 !important; top: 0 !important; }
+}
