@@ -602,3 +602,8 @@
 @media (max-width: 600px) {
   .cb-wrap:nth-of-type(1) .cb-text { position: relative; top: 4%; }
 }
+
+/* Courses page (phone): checklist moved down slightly */
+@media (max-width: 600px) {
+  .cb-checks { position: relative; top: 6px; }
+}
