@@ -733,3 +733,8 @@
 @media (max-width: 600px) {
   .courses-bottom-cta { padding: 22px 5% !important; }
 }
+
+/* Phone: back-to-top arrow without a background colour (keeps its gold outline and arrow) */
+@media (max-width: 600px) {
+  .scroll-top-btn { background: transparent !important; }
+}
