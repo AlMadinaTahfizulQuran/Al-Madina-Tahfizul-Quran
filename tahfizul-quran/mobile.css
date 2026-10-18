@@ -728,3 +728,8 @@
 @media (max-width: 600px) {
   .courses-bottom-cta-btn { padding: 7px 16px; font-size: 0.6rem; }
 }
+
+/* Courses page (phone): thinner navy Ready to begin box */
+@media (max-width: 600px) {
+  .courses-bottom-cta { padding: 22px 5% !important; }
+}
