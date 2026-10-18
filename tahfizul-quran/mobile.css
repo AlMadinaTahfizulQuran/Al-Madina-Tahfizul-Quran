@@ -690,7 +690,7 @@
 
 /* Courses page (phone): course 01 description box moved down a little */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 36px; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 24px; }
 }
 
 /* Courses page (phone, narrow screens such as a Z Fold front screen): smaller checklist and text kept clear of the arch */
