@@ -718,3 +718,8 @@
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-text { position: relative !important; top: auto !important; left: auto !important; width: auto !important; padding: 14px 6% 6px; }
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks { left: 0 !important; top: 0 !important; }
 }
+
+/* Narrow phones (under 380px): room between each checklist and the description box below */
+@media (max-width: 380px) {
+  .cb-info { margin-top: 22px; }
+}
