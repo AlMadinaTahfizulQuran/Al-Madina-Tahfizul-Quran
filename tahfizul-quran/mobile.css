@@ -687,3 +687,8 @@
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::after { left: 12%; }
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::before { left: 42%; transform: translateX(-50%); }
 }
+
+/* Courses page (phone): course 01 description box moved down a little */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 12px; }
+}
