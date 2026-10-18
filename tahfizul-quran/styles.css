@@ -2727,9 +2727,10 @@ ul { list-style: none; }
   }
 }
 
-/* Desktop: nameplate sits 4px higher than its original position */
+/* Desktop: logo and nameplate move up together, 20px higher than before */
 @media (min-width: 901px) {
-  .logo-overlap-wrap .logo-nameplate { top: -4px; }
+  .logo-overlap-wrap { top: 160px; }
+  .logo-overlap-wrap .logo-nameplate { top: 2px; }
 }
 
 /* Nameplate when it is moved into the sticky navy bar on scroll (all screens) */
