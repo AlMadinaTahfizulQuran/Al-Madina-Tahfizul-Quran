@@ -736,5 +736,5 @@
 
 /* Phone: back-to-top arrow without a background colour (keeps its gold outline and arrow) */
 @media (max-width: 600px) {
-  .scroll-top-btn { background: transparent !important; }
+  html body button.scroll-top-btn.scroll-top-btn { background: transparent !important; }
 }
