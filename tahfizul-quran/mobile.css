@@ -591,3 +591,9 @@
 @media (max-width: 600px) {
   .cb-title { font-size: 4.2cqw !important; }
 }
+
+/* Courses page (phone): course text centred within its block */
+@media (max-width: 600px) {
+  .cb-text, .cb-title, .cb-eyebrow, .cb-sub { text-align: center; }
+  .cb-checks { text-align: left; display: inline-grid; }
+}
