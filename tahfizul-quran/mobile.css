@@ -764,3 +764,44 @@
 @media (max-width: 600px) {
   a[href="course-fees.html"] { pointer-events: none !important; cursor: default; }
 }
+
+/* Phones: stop the browser boosting text size on its own, so the layout stays as designed */
+@media (max-width: 600px) {
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+}
+
+/* Home hero (phones): the active card sits in the slider's flow at the bottom, so the slider
+   grows with the card when the text is larger (the photos stay behind it) */
+@media (max-width: 600px) {
+  .hero-single { display: flex !important; flex-direction: column; justify-content: flex-end; height: auto !important; padding-top: 44px; box-sizing: border-box; }
+  .hero-single .hero-card.active { position: relative !important; top: auto !important; bottom: auto !important; left: auto !important; transform: none !important; height: auto !important; min-height: 186px; align-self: flex-start; margin: 0 0 44px 12px !important; }
+}
+
+/* Home about panel (phones): text sits in the same cell as the photo, the button goes in the
+   row below, so longer text pushes the button down instead of covering the paragraph */
+@media (max-width: 600px) {
+  .about-teaser { display: grid !important; grid-template-columns: 100%; }
+  .about-teaser > .about-bg { grid-area: 1 / 1; }
+  .about-teaser > .about-text-frame { grid-area: 1 / 1; position: relative !important; inset: auto !important; pointer-events: auto; }
+  .about-teaser > .about-text-frame .about-text-overlay { position: relative !important; left: 14% !important; top: auto !important; margin-top: 108px; width: 62% !important; padding-bottom: 16px; }
+  .about-teaser > .about-cta-btn { grid-area: 2 / 1; position: relative !important; left: auto !important; bottom: auto !important; justify-self: start; margin: 0 0 22px 14% !important; }
+}
+
+/* Home cards (phones): keep the arch shape as a minimum height, but let the card grow
+   when larger text needs more room (the fixed aspect ratio was cutting the text off) */
+@media (max-width: 600px) {
+  .card { aspect-ratio: auto !important; min-height: 110vw; height: auto !important; }
+}
+
+/* Courses (phones): the course text sits in the same grid cell as the banner photo and the
+   blue description box sits in the row below, so a taller checklist pushes the box down
+   instead of overlapping it. No fixed heights that could clip larger text. */
+@media (max-width: 600px) {
+  .cb-wrap { display: grid !important; grid-template-columns: 100%; height: auto !important; overflow: hidden; }
+  .cb-wrap > .course-full-width-img { grid-area: 1 / 1; min-width: 0; align-self: start; }
+  .cb-wrap > .cb-text { grid-area: 1 / 1; position: relative !important; top: auto !important; min-width: 0; max-width: 100%; box-sizing: border-box; padding-bottom: 14px; }
+  .cb-wrap > .cb-info { grid-area: 2 / 1; min-width: 0; box-sizing: border-box; }
+  .cb-checks { min-width: 0; max-width: 100%; width: 92%; }
+  .cb-checks li { min-width: 0; overflow-wrap: anywhere; }
+}
+
