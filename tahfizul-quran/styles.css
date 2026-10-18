@@ -334,7 +334,7 @@ ul { list-style: none; }
   bottom: 24px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  display: flex !important;
+  display: none !important;
   gap: 12px !important;
   z-index: 8 !important;
 }
