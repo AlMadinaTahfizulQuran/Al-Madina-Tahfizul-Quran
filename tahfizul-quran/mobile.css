@@ -685,5 +685,5 @@
 /* Courses page (phone): course 04 divider moved right */
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::after { left: 12%; }
-  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::before { left: 72%; }
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::before { left: 42%; transform: translateX(-50%); }
 }
