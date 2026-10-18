@@ -723,3 +723,8 @@
 @media (max-width: 380px) {
   .cb-info { margin-top: 22px; }
 }
+
+/* Courses page (phone): Contact us button slightly smaller */
+@media (max-width: 600px) {
+  .courses-bottom-cta-btn { padding: 10px 22px; font-size: 0.7rem; }
+}
