@@ -562,3 +562,9 @@
   .cb-right .course-full-width-img { width: 84% !important; margin-left: 16% !important; }
   .cb-left .course-full-width-img { width: 84% !important; margin-left: 0 !important; }
 }
+
+/* Courses page (phone): photos zoomed in, anchored to the side the photo is on */
+@media (max-width: 600px) {
+  .cb-right .course-full-width-img { width: 100% !important; margin-left: 0 !important; transform: scale(1.3) !important; transform-origin: 0% 40% !important; }
+  .cb-left .course-full-width-img { width: 100% !important; margin-left: 0 !important; transform: scale(1.3) !important; transform-origin: 100% 40% !important; }
+}
