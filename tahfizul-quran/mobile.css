@@ -554,7 +554,7 @@
   .cb-checks { display: grid !important; font-size: 1.9cqw; grid-template-columns: 1fr; gap: 0.6cqw; }
   .cb-checks li { padding-left: 3.4cqw; }
   .cb-checks li::before { content: '\2713'; }
-  .cb-info { display: block; background: #FAF6F2; padding: 16px 6% 22px; font-size: 0.9rem; line-height: 1.6; color: #2c3a55; margin: 0; }
+  .cb-info { display: block; background: #e4eef4; padding: 16px 6% 22px; font-size: 0.9rem; line-height: 1.6; color: #2c3a55; margin: 0; }
 }
 
 /* Courses page (phone): arches moved closer to their text */
