@@ -575,3 +575,9 @@
   .cb-right .course-full-width-img { object-position: 0% 50% !important; transform-origin: initial !important; }
   .cb-left .course-full-width-img { object-position: 100% 50% !important; transform-origin: initial !important; }
 }
+
+/* Courses page (phone): checklist bullets bigger and bold */
+@media (max-width: 600px) {
+  .cb-checks { font-size: 2.6cqw !important; font-weight: 700 !important; }
+  .cb-checks li { font-weight: 700 !important; }
+}
