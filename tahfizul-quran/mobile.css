@@ -646,3 +646,8 @@
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow::after { left: 20%; width: 60%; background: #a3161d; }
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow::before { content: '\25C6'; left: 50%; bottom: -7px; transform: translateX(-50%); color: #a3161d; }
 }
+
+/* Courses page (phone): course 01 heading back below its design line */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-title { margin-top: 11cqw !important; }
+}
