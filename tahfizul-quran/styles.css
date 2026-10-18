@@ -3056,3 +3056,8 @@ ul { list-style: none; }
   .courses-hero-eyebrow { display: none !important; }
   .courses-hero h1 { color: #D5A33E !important; }
 }
+
+/* Courses (desktop): the full description block is only used on phones */
+@media (min-width: 601px) {
+  .cb-info { display: none; }
+}
