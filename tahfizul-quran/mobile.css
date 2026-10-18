@@ -581,3 +581,8 @@
   .cb-checks { font-size: 2.6cqw !important; font-weight: 700 !important; }
   .cb-checks li { font-weight: 700 !important; }
 }
+
+/* Courses page (phone): checklist moved right */
+@media (max-width: 600px) {
+  .cb-checks { position: relative; left: 4%; }
+}
