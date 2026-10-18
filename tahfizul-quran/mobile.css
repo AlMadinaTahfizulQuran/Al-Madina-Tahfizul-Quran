@@ -630,8 +630,9 @@
   .cb-checks { color: var(--cb-color) !important; }
 }
 
-/* Courses page (phone): gold design line between the header and course 02 */
+/* Courses page (phone): gold divider between COURSE 02 and its heading */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner2"]) { position: relative; border-top: 1px solid #D5A33E; }
-  .cb-wrap:has(img[src*="Coursebanner2"])::before { content: '\25C6'; position: absolute; top: -7px; left: 50%; transform: translateX(-50%); background: #FAF6F2; color: #D5A33E; font-size: 0.6rem; padding: 0 6px; }
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow { position: relative; padding-bottom: 8px; margin-bottom: 14px; }
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow::after { content: ''; position: absolute; left: 0; bottom: 0; width: 60%; height: 1px; background: #D5A33E; }
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow::before { content: '\25C6'; position: absolute; left: 60%; bottom: -6px; font-size: 0.55rem; color: #D5A33E; }
 }
