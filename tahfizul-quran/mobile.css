@@ -31,7 +31,7 @@
   .hero-single .hero-card { background: rgba(251, 248, 240, 0.85) !important; left: 12px !important; right: auto !important; width: 52% !important; max-width: none !important; top: auto !important; bottom: 44px !important; height: 186px !important; transform: none !important; padding: 10px 18px 46px !important; }
   .hero-single .hero-card h1 { font-size: 13px !important; line-height: 1.2 !important; margin-bottom: 6px !important; }
   .hero-single .hero-card p { font-size: 11px !important; font-weight: 600 !important; margin-bottom: 6px !important; }
-  .hero-single .hero-eyebrow { display: block !important; font-size: 0.5rem !important; margin-bottom: 6px !important; }
+  .hero-single .hero-eyebrow { display: block !important; font-size: 0.5rem !important; margin-bottom: 6px !important; letter-spacing: 0.05em !important; }
   .hero-single .hero-cta-btn { position: absolute !important; left: 8px !important; bottom: 8px !important; width: auto !important; max-width: none !important; height: auto !important; padding: 4px 6px !important; font-size: 0.45rem !important; white-space: nowrap; }
   .hero-single .hero-arrow { width: 26px !important; height: 26px !important; font-size: 0.7rem !important; }
   .hero-single .hero-dots { bottom: 14px !important; }
