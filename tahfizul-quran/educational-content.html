@@ -317,6 +317,118 @@
   </div>
 </footer>
 <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#8593;</button>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+let currentPdfDoc = null;
+let currentPdfPage = 1;
+async function renderPdfPreview(card) {
+  const pdfPath = card.getAttribute('data-pdf');
+  const canvas = card.querySelector('.pdf-preview-canvas');
+  const titleElement = card.querySelector('h3');
+  try {
+    const pdf = await pdfjsLib.getDocument(pdfPath).promise;
+    const page = await pdf.getPage(1);
+    const viewport = page.getViewport({ scale: 1.5 });
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+    const ctx = canvas.getContext('2d');
+    await page.render({ canvasContext: ctx, viewport: viewport });
+  } catch (error) {
+    console.error('Error rendering PDF preview:', error);
+    canvas.style.display = 'none';
+  }
+}
+async function openPdfViewer(pdfPath, title) {
+  const modal = document.getElementById('pdfViewerModal');
+  const canvas = document.getElementById('pdfViewerCanvas');
+  const titleElement = document.getElementById('pdfViewerTitle');
+  titleElement.textContent = title;
+  currentPdfPage = 1;
+  try {
+    currentPdfDoc = await pdfjsLib.getDocument(pdfPath).promise;
+    document.getElementById('pdfTotalPages').textContent = currentPdfDoc.numPages;
+    renderPdfPage(currentPdfPage);
+    modal.style.display = 'flex';
+  } catch (error) {
+    console.error('Error loading PDF:', error);
+    alert('Error loading PDF. Please try again.');
+  }
+}
+async function renderPdfPage(pageNum) {
+  const canvas = document.getElementById('pdfViewerCanvas');
+  const ctx = canvas.getContext('2d');
+  try {
+    const page = await currentPdfDoc.getPage(pageNum);
+    const viewport = page.getViewport({ scale: 2 });
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+    await page.render({ canvasContext: ctx, viewport: viewport });
+    document.getElementById('pdfCurrentPage').textContent = pageNum;
+    document.getElementById('pdfPrevBtn').disabled = pageNum <= 1;
+    document.getElementById('pdfNextBtn').disabled = pageNum >= currentPdfDoc.numPages;
+  } catch (error) {
+    console.error('Error rendering page:', error);
+  }
+}
+function closePdfViewer() {
+  const modal = document.getElementById('pdfViewerModal');
+  modal.style.display = 'none';
+  currentPdfDoc = null;
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const cards = document.querySelectorAll('.edu-card');
+  cards.forEach(card => {
+    renderPdfPreview(card);
+  });
+  const viewBtns = document.querySelectorAll('.edu-view-btn');
+  viewBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const pdfPath = this.getAttribute('data-pdf');
+      const title = this.closest('.edu-card').querySelector('h3').textContent;
+      openPdfViewer(pdfPath, title);
+    });
+  });
+  const modal = document.getElementById('pdfViewerModal');
+  const closeBtn = document.querySelector('.pdf-viewer-close');
+  const overlay = document.querySelector('.pdf-viewer-overlay');
+  closeBtn.addEventListener('click', closePdfViewer);
+  overlay.addEventListener('click', closePdfViewer);
+  document.getElementById('pdfPrevBtn').addEventListener('click', () => {
+    if (currentPdfPage > 1) {
+      currentPdfPage--;
+      renderPdfPage(currentPdfPage);
+    }
+  });
+  document.getElementById('pdfNextBtn').addEventListener('click', () => {
+    if (currentPdfPage < currentPdfDoc.numPages) {
+      currentPdfPage++;
+      renderPdfPage(currentPdfPage);
+    }
+  });
+  const searchInput = document.getElementById('resourceSearch');
+  const filterBtns = document.querySelectorAll('.edu-filter-btn');
+  let currentFilter = 'all';
+  function filterCards() {
+    const searchTerm = searchInput.value.toLowerCase();
+    cards.forEach(card => {
+      const title = card.querySelector('h3').textContent.toLowerCase();
+      const language = card.getAttribute('data-language');
+      const matchesSearch = title.includes(searchTerm);
+      const matchesFilter = currentFilter === 'all' || language === currentFilter;
+      card.style.display = (matchesSearch && matchesFilter) ? 'flex' : 'none';
+    });
+  }
+  searchInput.addEventListener('input', filterCards);
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      currentFilter = this.getAttribute('data-filter');
+      filterCards();
+    });
+  });
+});
+</script>
 <script src="script.js"></script>
 <script src="menu-phone.js"></script>
 </body>
