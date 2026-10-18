@@ -503,3 +503,19 @@
   .courses-hero-eyebrow { display: none !important; }
   .courses-hero h1 { color: #D5A33E !important; }
 }
+
+/* Courses page (phone): same as desktop. Banners fit the width, with the course text laid over them */
+@media (max-width: 600px) {
+  .cb-wrap { position: relative; container-type: inline-size; overflow: hidden; }
+  .cb-wrap .course-full-width-img { display: block; width: 100%; height: auto; max-width: 100%; }
+  .cb-text { display: block !important; position: absolute; top: 14%; width: 56%; color: #1f2a44; }
+  .cb-right .cb-text { left: 38%; }
+  .cb-left .cb-text { left: 8%; }
+  .cb-eyebrow { font-size: 2.6cqw; font-weight: 700; letter-spacing: 0.25em; color: var(--cb-color); margin: 0 0 1cqw; }
+  .cb-title { font-family: var(--font-heading); font-weight: 700; font-size: 5.2cqw; line-height: 1.1; color: var(--cb-color); margin: 4cqw 0 1.5cqw; }
+  .cb-sub { font-size: 2.9cqw; line-height: 1.35; color: var(--cb-color); margin: 0 0 2cqw; }
+  .cb-body { font-size: 2.3cqw; line-height: 1.5; color: #2c3a55; margin: 0 0 2.5cqw; }
+  .cb-checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 1cqw; font-size: 2.2cqw; color: #2c3a55; }
+  .cb-checks li { position: relative; padding-left: 4cqw; }
+  .cb-checks li::before { content: '¹3'; position: absolute; left: 0; color: var(--cb-color); font-weight: 700; }
+}
