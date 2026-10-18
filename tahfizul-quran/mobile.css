@@ -535,3 +535,11 @@
   .cb-right .course-full-width-img { object-position: 0% center !important; transform-origin: 0% 50% !important; }
   .cb-left .course-full-width-img { object-position: 100% center !important; transform-origin: 100% 50% !important; }
 }
+
+/* Courses page (phone): keep the text on the blank side, clear of the arches */
+@media (max-width: 600px) {
+  .cb-wrap .course-full-width-img { transform: none !important; }
+  .cb-text { width: 46% !important; }
+  .cb-right .cb-text { left: 52% !important; }
+  .cb-left .cb-text { left: 4% !important; }
+}
