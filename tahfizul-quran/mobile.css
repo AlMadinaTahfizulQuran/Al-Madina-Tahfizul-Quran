@@ -605,5 +605,5 @@
 
 /* Courses page (phone): checklist moved down slightly */
 @media (max-width: 600px) {
-  .cb-checks { position: relative; top: 6px; }
+  .cb-checks { position: relative; top: 6px; left: 8%; }
 }
