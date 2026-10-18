@@ -624,3 +624,8 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-text { left: 0 !important; }
 }
+
+/* Courses page (phone): checklist text takes each course's section colour */
+@media (max-width: 600px) {
+  .cb-checks { color: var(--cb-color) !important; }
+}
