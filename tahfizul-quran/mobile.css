@@ -679,5 +679,5 @@
 
 /* Courses page (phone): course 04, the 2nd and 4th bullets wrap onto two lines */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(2), .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(4) { padding-right: 22%; }
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(2), .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(3), .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(4) { padding-right: 22%; }
 }
