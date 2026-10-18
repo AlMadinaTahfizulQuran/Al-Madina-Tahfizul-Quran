@@ -681,3 +681,9 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(2), .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(3), .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks li:nth-child(4) { padding-right: 22%; }
 }
+
+/* Courses page (phone): course 04 divider moved right */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::after { left: 12%; }
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-eyebrow::before { left: 72%; }
+}
