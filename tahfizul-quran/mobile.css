@@ -98,6 +98,8 @@
 @media (max-width: 600px) {
   .courses-eyebrow { font-size: 0.85rem; }
   .courses-header h2 { font-size: 20px; }
+  .courses-header .courses-eyebrow { display: none !important; }
+  .courses-header h2::before, .courses-header h2::after { content: '\25C6'; color: #D5A33E; font-size: 0.5rem; vertical-align: middle; margin: 0 10px; }
 }
 
 /* Regular text font on phones: Nunito Sans. Headings keep Playfair Display. */
