@@ -519,3 +519,13 @@
   .cb-checks li { position: relative; padding-left: 4cqw; }
   .cb-checks li::before { content: '¹3'; position: absolute; left: 0; color: var(--cb-color); font-weight: 700; }
 }
+
+/* Courses page (phone): taller, zoomed-in banners; only the course name and short intro over them */
+@media (max-width: 600px) {
+  .cb-wrap { height: 340px; }
+  .cb-wrap .course-full-width-img { height: 100%; width: 100%; object-fit: cover; object-position: center; transform: scale(1.15); }
+  .cb-text { width: 58%; top: 10%; }
+  .cb-body, .cb-checks { display: none !important; }
+  .cb-title { font-size: 5.2cqw; margin: 2cqw 0 1cqw; }
+  .cb-sub { font-size: 3.2cqw; }
+}
