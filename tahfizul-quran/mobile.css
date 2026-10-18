@@ -550,7 +550,7 @@
   .cb-wrap .course-full-width-img { height: auto !important; transform: none !important; object-fit: contain !important; }
   .cb-text { top: 4% !important; width: 46% !important; }
   .cb-sub, .cb-body { display: none !important; }
-  .cb-title { font-size: 4.2cqw !important; margin: 7cqw 0 1cqw !important; }
+  .cb-title { font-size: 4.2cqw !important; margin: 3cqw 0 1cqw !important; }
   .cb-checks { display: grid !important; font-size: 1.9cqw; grid-template-columns: 1fr; gap: 0.6cqw; }
   .cb-checks li { padding-left: 3.4cqw; }
   .cb-checks li::before { content: '\2713'; }
