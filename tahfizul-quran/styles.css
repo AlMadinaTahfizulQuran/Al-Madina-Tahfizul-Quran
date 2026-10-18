@@ -3062,3 +3062,16 @@ ul { list-style: none; }
 @media (min-width: 601px) {
   .cb-info { display: none; }
 }
+
+/* Desktop: green strip below the homepage slider with the scrolling text (desktop only) */
+/* Scrolling strip below the homepage slider: green on phones and tablets, navy with gold borders on desktop */
+.desktop-announce { display: block; position: relative; height: 13px; background: var(--green); overflow: hidden; }
+.desktop-announce span { display: inline-block; position: absolute; top: 0; left: 0; white-space: nowrap; line-height: 13px; color: #ffffff; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; animation: desktopAnnounce 30s linear infinite; }
+@media (min-width: 901px) {
+  .desktop-announce { height: 34px; background: var(--navy); border-top: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold); box-sizing: border-box; }
+  .desktop-announce span { line-height: 28px; font-size: 0.8rem; animation-duration: 40s; }
+}
+@keyframes desktopAnnounce {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-100%); }
+}

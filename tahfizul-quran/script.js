@@ -47,11 +47,32 @@ document.addEventListener('DOMContentLoaded', function () {
   const stickyNav = document.querySelector('#stickyCloneHeader .main-nav');
   function syncNameplate() {
     if (!nameplate || !logoWrap || !stickyNav || !cloneHeader) return;
-    const target = cloneHeader.classList.contains('visible') ? stickyNav : logoWrap;
+    const barShowing = cloneHeader.classList.contains('visible');
+    const floating = barShowing && window.innerWidth <= 600;
+    // On phones the nameplate is lifted out of the bar, so it can sit on top of the slider strip
+    nameplate.classList.toggle('np-floating', floating);
+    const target = floating ? document.body : (barShowing ? stickyNav : logoWrap);
     if (nameplate.parentNode !== target) target.appendChild(nameplate);
   }
   window.addEventListener('scroll', syncNameplate);
   syncNameplate();
+
+  // Phones: once the green bar reaches the slider strip, the slider strip takes the bar's place at the top
+  // (the nameplate stays exactly where it is, on top of it)
+  function replaceBarPosition() {
+    const strip = document.querySelector('.desktop-announce');
+    if (!strip || !cloneHeader) return;
+    strip.style.translate = '';
+    const barH = cloneHeader.getBoundingClientRect().height;
+    const stripTop = strip.getBoundingClientRect().top;
+    const phoneBar = window.innerWidth <= 600 && cloneHeader.classList.contains('visible');
+    // The slider strip slides over the bar (it sits above it), and the bar is hidden once fully covered.
+    // After that the strip and the nameplate scroll up together with the page.
+    const covered = phoneBar && stripTop <= 0;
+    cloneHeader.style.visibility = covered ? 'hidden' : '';
+  }
+  window.addEventListener('scroll', replaceBarPosition);
+  replaceBarPosition();
 
   if (scrollTopBtn) {
     scrollTopBtn.addEventListener('click', function () {

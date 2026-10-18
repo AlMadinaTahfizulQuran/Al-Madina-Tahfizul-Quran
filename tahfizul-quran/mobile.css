@@ -354,7 +354,7 @@
 /* Phone: nameplate text replaced with the tagline; the gold menu arrow sits under it */
 @media (max-width: 600px) {
   .logo-nameplate .np-line1, .logo-nameplate .np-line2 { display: none !important; }
-  .logo-overlap-wrap .logo-nameplate, #stickyCloneHeader .logo-nameplate { padding: 2px 16px 3px !important; font-size: 0.5rem !important; line-height: 1.1 !important; border-radius: 0 0 5px 5px; }
+  .logo-overlap-wrap .logo-nameplate, #stickyCloneHeader .logo-nameplate, .np-floating { padding: 2px 16px 3px !important; font-size: 0.5rem !important; line-height: 1.1 !important; border-radius: 0 0 5px 5px; }
   .logo-nameplate::before { content: "Learn · Recite · Memorise"; font-family: var(--font-heading); font-weight: 700; color: var(--green); font-size: 0.5rem; line-height: 1.1; letter-spacing: 0.06em; white-space: nowrap; }
   .logo-nameplate::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 5px; vertical-align: middle; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #B8860B; }
 }
@@ -407,9 +407,9 @@
 /* Phone, scrolling: top numbers strip stays hidden; the green menu bar becomes a looping announcement */
 @media (max-width: 600px) {
   #stickyCloneHeader .top-bar { display: none; }
-  #stickyCloneHeader .main-nav { height: 18px; }
-  #stickyCloneHeader .sticky-announce { display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden; z-index: 1; pointer-events: none; }
-  #stickyCloneHeader .sticky-announce span { display: inline-block; position: relative; top: -5px; white-space: nowrap; line-height: 22px; color: #ffffff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; animation: announceScroll 14s linear infinite; }
+  #stickyCloneHeader .main-nav { height: 13px; }
+  #stickyCloneHeader .sticky-announce { display: none !important; position: absolute; left: 0; right: 0; top: 0; bottom: 0; overflow: hidden; z-index: 1; pointer-events: none; }
+  #stickyCloneHeader .sticky-announce span { display: inline-block; position: relative; top: -11px; white-space: nowrap; line-height: 14px; color: #ffffff; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; animation: announceScroll 22s linear infinite; }
 }
 @keyframes announceScroll {
   from { transform: translateX(100vw); }
@@ -665,6 +665,7 @@
   .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks li:nth-last-child(2) { white-space: nowrap; }
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow { margin-top: 6cqw !important; }
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-checks li:last-child { display: none !important; }
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-eyebrow { margin-top: 8cqw !important; }
 }
 
 /* Courses page (phone): course 03 heading moved down */
@@ -818,3 +819,27 @@
   .cb-checks li { min-width: 0; overflow-wrap: anywhere; }
 }
 
+
+
+/* Phones: the slider strip takes the green bar's place at the top once they meet; the bar goes clear so the strip shows through, and the nameplate stays on top */
+@media (max-width: 600px) {
+  .desktop-announce { position: sticky; top: 0; z-index: 210; }
+  #stickyCloneHeader .main-nav { background: transparent !important; position: relative; }
+  #stickyCloneHeader .main-nav::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 100%; background: var(--green); z-index: 0; }
+  #stickyCloneHeader .logo-nameplate { z-index: 2; }
+}
+
+
+/* Phones: the nameplate lifted out of the bar sits on top of the slider strip, in the same place */
+@media (max-width: 600px) {
+  .np-floating { position: fixed !important; top: 0 !important; left: calc(50% + 32px) !important; transform: translateX(-50%) !important; margin: 0 !important; z-index: 230 !important; white-space: nowrap; max-width: none; pointer-events: auto; }
+}
+
+/* Phones: the lifted nameplate slides in with the green bar, so the top transition stays smooth */
+@keyframes npDrop {
+  from { translate: 0 -13px; }
+  to { translate: 0 0; }
+}
+@media (max-width: 600px) {
+  .np-floating { animation: npDrop 0.25s ease; }
+}
