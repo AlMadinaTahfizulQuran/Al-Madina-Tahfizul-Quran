@@ -651,3 +651,8 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner1"]) .cb-title { margin-top: 11cqw !important; }
 }
+
+/* Courses page (phone): course 03 heading moved down */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-title { margin-top: 9cqw !important; }
+}
