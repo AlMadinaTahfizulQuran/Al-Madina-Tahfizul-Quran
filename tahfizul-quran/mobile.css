@@ -589,5 +589,5 @@
 
 /* Courses page (phone): course headings smaller */
 @media (max-width: 600px) {
-  .cb-title { font-size: 3.4cqw !important; }
+  .cb-title { font-size: 4.2cqw !important; }
 }
