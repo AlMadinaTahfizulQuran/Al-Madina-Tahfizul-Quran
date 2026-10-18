@@ -346,9 +346,9 @@
   .logo-nameplate { cursor: pointer; }
 }
 
-/* Phone: small gold down arrow after "Complex" shows the nameplate opens the menu */
+/* Phone: down arrow after "Complex" shows the nameplate opens the menu (larger and darker gold so it stands out) */
 @media (max-width: 600px) {
-  .logo-nameplate .np-line2::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 5px; vertical-align: middle; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #D5A33E; }
+  .logo-nameplate .np-line2::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 7px; vertical-align: middle; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid #B8860B; }
 }
 
 /* Phone: nameplate a bit bigger */
