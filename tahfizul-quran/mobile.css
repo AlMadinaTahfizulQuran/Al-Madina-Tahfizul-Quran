@@ -508,7 +508,7 @@
 @media (max-width: 600px) {
   .cb-wrap { position: relative; container-type: inline-size; overflow: hidden; }
   .cb-wrap .course-full-width-img { display: block; width: 100%; height: auto; max-width: 100%; }
-  .cb-text { display: block !important; position: absolute; top: 14%; width: 56%; color: #1f2a44; }
+  .cb-text { display: block !important; position: absolute; top: 6%; width: 56%; color: #1f2a44; }
   .cb-right .cb-text { left: 38%; }
   .cb-left .cb-text { left: 8%; }
   .cb-eyebrow { font-size: 2.6cqw; font-weight: 700; letter-spacing: 0.25em; color: var(--cb-color); margin: 0 0 1cqw; }
