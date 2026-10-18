@@ -671,3 +671,8 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks { left: 12%; }
 }
+
+/* Courses page (phone): course 04 checklist moved left */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks { left: 0; }
+}
