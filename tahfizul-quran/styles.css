@@ -3080,3 +3080,9 @@ ul { list-style: none; }
 @media (min-width: 601px) {
   #stickyCloneHeader .sticky-announce { display: none !important; }
 }
+
+/* Educational Content: the paragraph under "Browse Educational Resources" is removed on all screens */
+.edu-library-header p { display: none !important; }
+
+/* Educational Content: thin gold line under the hero image on all screens */
+.edu-hero-img { border-bottom: 3px solid var(--gold); box-sizing: border-box; }

@@ -322,7 +322,7 @@
 
 /* Phone: 2026 Calendar heading slightly smaller */
 @media (max-width: 600px) {
-  .calendar-feature h2 { font-size: 1.2rem; }
+  .calendar-feature h2 { font-size: 1rem; }
 }
 
 /* Phone course cards: slightly smaller, centred */
@@ -332,7 +332,7 @@
 
 /* Phone: calendar intro text smaller */
 @media (max-width: 600px) {
-  .calendar-sub { font-size: 0.72rem; line-height: 1.5; margin-bottom: 12px; }
+  .calendar-sub { display: none !important; }
 }
 
 /* Phone: Download full calendar button smaller */
@@ -762,8 +762,8 @@
 @media (max-width: 600px) {
   .edu-hero-image { position: relative; container-type: inline-size; }
   .edu-hero-text { display: block !important; position: absolute; left: 7.4%; top: 26%; width: 36%; color: #1a2a56; pointer-events: none; }
-  .edu-hero-title { font-family: var(--font-heading); font-weight: 700; font-size: 3.4cqw; line-height: 1.12; color: #1a2a56; margin: 0 0 1.6cqw; }
-  .edu-hero-sub { font-family: var(--font-body); font-size: 2.3cqw; line-height: 1.5; color: #1a2a56; margin: 0; max-width: 34cqw; }
+  .edu-hero-title { font-family: var(--font-heading); font-weight: 700; font-size: 2.6cqw; line-height: 1.12; color: #1a2a56; margin: 0 0 4cqw; }
+  .edu-hero-sub { font-family: var(--font-body); font-size: 2.3cqw; line-height: 1.25; color: #1a2a56; margin: 0; max-width: 34cqw; }
   .edu-hero-text { width: 46%; }
 }
 
@@ -801,7 +801,7 @@
   .about-teaser > .about-bg { grid-area: 1 / 1; }
   .about-teaser > .about-text-frame { grid-area: 1 / 1; position: relative !important; inset: auto !important; pointer-events: auto; }
   .about-teaser > .about-text-frame .about-text-overlay { position: relative !important; left: 14% !important; top: auto !important; margin-top: 108px; width: 62% !important; padding-bottom: 16px; }
-  .about-teaser > .about-cta-btn { grid-area: 2 / 1; position: relative !important; left: auto !important; bottom: auto !important; justify-self: start; margin: -30px 0 0 14% !important; }
+  .about-teaser > .about-cta-btn { grid-area: 2 / 1; position: relative !important; left: auto !important; bottom: auto !important; justify-self: start; margin: -66px 0 0 14% !important; }
 }
 
 /* Home cards (phones): keep the arch shape as a minimum height, but let the card grow
@@ -851,5 +851,18 @@
 @media (max-width: 600px) {
   .courses-hero p br.hero-br { display: none; }
   .courses-hero p { text-align: center; text-wrap: balance; font-size: 0.78rem; }
-  .courses-hero h1 { font-size: 1.3rem !important; }
+  .courses-hero h1 { font-size: 1.15rem !important; margin-bottom: 4px !important; }
+  .courses-hero p { margin-top: 0 !important; }
+}
+
+
+/* Educational Content (phones): hero paragraph a little higher; thin gold line under the hero image */
+@media (max-width: 600px) {
+  .edu-hero-sub { position: relative; top: -6px; }
+  .edu-hero-img { border-bottom: 3px solid var(--gold); box-sizing: border-box; }
+}
+
+/* Educational Content (phones): the paragraph under "Browse Educational Resources" is removed */
+@media (max-width: 600px) {
+  .edu-library-header p { display: none !important; }
 }
