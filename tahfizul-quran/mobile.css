@@ -759,3 +759,8 @@
 @media (max-width: 600px) {
   .edu-library-header h2 { font-size: 1.35rem !important; }
 }
+
+/* Phones: Course Fees link is unresponsive for now (page not wanted yet) */
+@media (max-width: 600px) {
+  a[href="course-fees.html"] { pointer-events: none !important; cursor: default; }
+}
