@@ -354,8 +354,8 @@
 /* Phone: nameplate text replaced with the tagline; the gold menu arrow sits under it */
 @media (max-width: 600px) {
   .logo-nameplate .np-line1, .logo-nameplate .np-line2 { display: none !important; }
-  .logo-overlap-wrap .logo-nameplate, #stickyCloneHeader .logo-nameplate { padding: 2px 10px 3px !important; font-size: 0.5rem !important; line-height: 1.1 !important; border-radius: 0 0 5px 5px; }
-  .logo-nameplate::before { content: "Learn · Recite · Memorise"; font-family: var(--font-heading); font-weight: 700; color: var(--green); font-size: 0.5rem; line-height: 1.1; white-space: nowrap; }
+  .logo-overlap-wrap .logo-nameplate, #stickyCloneHeader .logo-nameplate { padding: 2px 16px 3px !important; font-size: 0.5rem !important; line-height: 1.1 !important; border-radius: 0 0 5px 5px; }
+  .logo-nameplate::before { content: "Learn · Recite · Memorise"; font-family: var(--font-heading); font-weight: 700; color: var(--green); font-size: 0.5rem; line-height: 1.1; letter-spacing: 0.06em; white-space: nowrap; }
   .logo-nameplate::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 5px; vertical-align: middle; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid #B8860B; }
 }
 
