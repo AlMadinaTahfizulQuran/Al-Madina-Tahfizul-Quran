@@ -586,3 +586,8 @@
 @media (max-width: 600px) {
   .cb-checks { position: relative; left: 4%; }
 }
+
+/* Courses page (phone): course headings smaller */
+@media (max-width: 600px) {
+  .cb-title { font-size: 3.4cqw !important; }
+}
