@@ -749,3 +749,8 @@
   .edu-hero-sub { font-family: var(--font-body); font-size: 2.3cqw; line-height: 1.5; color: #1a2a56; margin: 0; max-width: 34cqw; }
   .edu-hero-text { width: 46%; }
 }
+
+/* Educational Content (phones): Educational Library moved up a little */
+@media (max-width: 600px) {
+  .edu-content-section { padding-top: 26px !important; }
+}
