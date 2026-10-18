@@ -651,7 +651,11 @@
 
 /* Courses page (phone): course 01 heading back below its design line */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-title { margin-top: 11cqw !important; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-title { margin-top: 4cqw !important; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-eyebrow { margin-top: 6cqw !important; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks li:last-child { display: none !important; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks li:nth-last-child(2) { white-space: nowrap; }
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow { margin-top: 6cqw !important; }
 }
 
 /* Courses page (phone): course 03 heading moved down */
