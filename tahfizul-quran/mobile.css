@@ -690,5 +690,5 @@
 
 /* Courses page (phone): course 01 description box moved down a little */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 12px; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { margin-top: 24px; }
 }
