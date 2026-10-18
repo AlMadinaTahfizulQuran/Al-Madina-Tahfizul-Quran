@@ -568,3 +568,10 @@
   .cb-right .course-full-width-img { width: 100% !important; margin-left: 0 !important; transform: scale(1.6) !important; transform-origin: 0% 40% !important; }
   .cb-left .course-full-width-img { width: 100% !important; margin-left: 0 !important; transform: scale(1.6) !important; transform-origin: 100% 40% !important; }
 }
+
+/* Courses page (phone): full design height shown; only the empty side is cropped */
+@media (max-width: 600px) {
+  .cb-wrap .course-full-width-img { transform: none !important; width: 100% !important; height: 300px !important; max-width: none !important; object-fit: cover !important; }
+  .cb-right .course-full-width-img { object-position: 0% 50% !important; transform-origin: initial !important; }
+  .cb-left .course-full-width-img { object-position: 100% 50% !important; transform-origin: initial !important; }
+}
