@@ -556,3 +556,9 @@
   .cb-checks li::before { content: '\2713'; }
   .cb-info { display: block; background: #FAF6F2; padding: 16px 6% 22px; font-size: 0.9rem; line-height: 1.6; color: #2c3a55; margin: 0; }
 }
+
+/* Courses page (phone): arches moved closer to their text */
+@media (max-width: 600px) {
+  .cb-right .course-full-width-img { width: 84% !important; margin-left: 16% !important; }
+  .cb-left .course-full-width-img { width: 84% !important; margin-left: 0 !important; }
+}
