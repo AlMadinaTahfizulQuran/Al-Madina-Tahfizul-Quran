@@ -746,6 +746,6 @@
   .edu-hero-image { position: relative; container-type: inline-size; }
   .edu-hero-text { display: block !important; position: absolute; left: 7.4%; top: 28%; width: 36%; color: #1a2a56; pointer-events: none; }
   .edu-hero-title { font-family: var(--font-heading); font-weight: 700; font-size: 3.4cqw; line-height: 1.12; color: #1a2a56; margin: 0 0 1.6cqw; }
-  .edu-hero-sub { font-family: var(--font-body); font-size: 2.3cqw; line-height: 1.5; color: #1a2a56; margin: 0; }
+  .edu-hero-sub { font-family: var(--font-body); font-size: 2.3cqw; line-height: 1.5; color: #1a2a56; margin: 0; max-width: 34cqw; }
   .edu-hero-text { width: 46%; }
 }
