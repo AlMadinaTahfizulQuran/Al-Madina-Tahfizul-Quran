@@ -529,3 +529,9 @@
   .cb-title { font-size: 5.2cqw; margin: 2cqw 0 1cqw; }
   .cb-sub { font-size: 3.2cqw; }
 }
+
+/* Courses page (phone): zoom toward each banner's photo, not the blank side */
+@media (max-width: 600px) {
+  .cb-right .course-full-width-img { object-position: 0% center !important; transform-origin: 0% 50% !important; }
+  .cb-left .course-full-width-img { object-position: 100% center !important; transform-origin: 100% 50% !important; }
+}
