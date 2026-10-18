@@ -661,8 +661,3 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner3"]) .cb-title { font-size: 4.2cqw !important; }
 }
-
-/* Courses page (phone): checklist narrower on courses 03 and 04 so long bullets wrap before the edge */
-@media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks, .cb-wrap:has(img[src*="Coursebanner4"]) .cb-checks { width: 72%; }
-}
