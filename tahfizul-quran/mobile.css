@@ -659,5 +659,5 @@
 
 /* Courses page (phone): course 03 heading smaller */
 @media (max-width: 600px) {
-  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-title { font-size: 3.4cqw !important; }
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-title { font-size: 4.2cqw !important; }
 }
