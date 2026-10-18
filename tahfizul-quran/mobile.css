@@ -607,3 +607,8 @@
 @media (max-width: 600px) {
   .cb-checks { position: relative; top: 6px; left: 8%; }
 }
+
+/* Courses page (phone): course 02 description box in the colour of its arch */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-info { background: #803020; color: #ffffff; }
+}
