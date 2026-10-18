@@ -629,3 +629,9 @@
 @media (max-width: 600px) {
   .cb-checks { color: var(--cb-color) !important; }
 }
+
+/* Courses page (phone): gold design line between the header and course 02 */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner2"]) { position: relative; border-top: 1px solid #D5A33E; }
+  .cb-wrap:has(img[src*="Coursebanner2"])::before { content: 'C6'; position: absolute; top: -7px; left: 50%; transform: translateX(-50%); background: #FAF6F2; color: #D5A33E; font-size: 0.6rem; padding: 0 6px; }
+}
