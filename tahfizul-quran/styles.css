@@ -2087,7 +2087,7 @@ ul { list-style: none; }
 
 .about-bottom-cta {
   background: #087A43;
-  padding: 40px 8%;
+  padding: 24px 8%;
   text-align: center;
 }
 
@@ -2119,10 +2119,10 @@ ul { list-style: none; }
   gap: 10px;
   background: var(--white);
   color: #087A43;
-  padding: 14px 32px;
+  padding: 10px 22px;
   border-radius: 6px;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-decoration: none;
@@ -2990,7 +2990,7 @@ ul { list-style: none; }
 
 /* Desktop About page: thinner green section at the bottom */
 @media (min-width: 901px) {
-  .about-bottom-cta { padding: 18px 8%; }
+  .about-bottom-cta { padding: 10px 8%; }
   .about-bottom-cta-content h3 { margin: 0 0 6px; }
   .about-bottom-cta-subtitle { margin: 0 0 10px; }
 }
@@ -3074,4 +3074,9 @@ ul { list-style: none; }
 @keyframes desktopAnnounce {
   from { transform: translateX(100vw); }
   to { transform: translateX(-100%); }
+}
+
+/* Desktop: the scrolling text inside the sticky header is phone-only */
+@media (min-width: 601px) {
+  #stickyCloneHeader .sticky-announce { display: none !important; }
 }
