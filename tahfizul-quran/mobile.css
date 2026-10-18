@@ -612,3 +612,10 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-info { background: #803020; color: #ffffff; }
 }
+
+/* Courses page (phone): each description box uses the colour sampled from its banner image */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-info { background: #407090; color: #ffffff; }
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-info { background: #408050; color: #ffffff; }
+  .cb-wrap:has(img[src*="Coursebanner4"]) .cb-info { background: #805030; color: #ffffff; }
+}
