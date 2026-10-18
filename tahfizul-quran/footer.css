@@ -64,7 +64,7 @@ footer.site-footer .sf-social-link:focus-visible { outline: 2px solid #D5A33E; o
 .sf-bottom { background: #1a2a56; border-top: 1px solid #D5A33E; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 8% 14px; padding-right: 96px; font-size: 0.78rem; letter-spacing: 0.04em; color: rgba(255, 255, 255, 0.85); }
 .sf-copy, .sf-designed { margin: 0; }
 .sf-designed span { color: #D5A33E; font-weight: 700; }
-.scroll-top-btn { background: #1a2a56 !important; color: #D5A33E !important; border: 1.5px solid #D5A33E !important; border-radius: 6px; font-size: 1.2rem; }
+.scroll-top-btn { background: transparent !important; color: #D5A33E !important; border: none !important; border-radius: 6px; font-size: 1.2rem; }
 .scroll-top-btn:focus-visible { outline: 2px solid #D5A33E; outline-offset: 3px; }
 @media (max-width: 900px) {
   footer.site-footer .sf-inner { grid-template-columns: 1fr 1fr; gap: 22px 28px; padding: 24px 6%; }
