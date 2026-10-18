@@ -754,3 +754,8 @@
 @media (max-width: 600px) {
   .edu-content-section { padding-top: 26px !important; }
 }
+
+/* Educational Content (phones): Browse Educational Resources heading slightly smaller */
+@media (max-width: 600px) {
+  .edu-library-header h2 { font-size: 1.35rem !important; }
+}
