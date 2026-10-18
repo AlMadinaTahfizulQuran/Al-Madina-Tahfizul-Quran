@@ -723,3 +723,9 @@
 @media (max-width: 380px) {
   .cb-info { margin-top: 22px; }
 }
+
+/* Courses page (phone, all phone widths): course text sits below each banner for courses 01 to 03, so nothing is covered by the description box */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-text, .cb-wrap:has(img[src*="Coursebanner2"]) .cb-text, .cb-wrap:has(img[src*="Coursebanner3"]) .cb-text { position: relative !important; top: auto !important; left: auto !important; width: auto !important; padding: 14px 6% 6px; }
+  .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks, .cb-wrap:has(img[src*="Coursebanner2"]) .cb-checks, .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks { left: 0 !important; top: 0 !important; }
+}
