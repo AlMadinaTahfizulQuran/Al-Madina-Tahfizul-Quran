@@ -351,6 +351,13 @@
   .logo-nameplate .np-line2::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 7px; vertical-align: middle; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid #B8860B; }
 }
 
+/* Phone: nameplate text replaced with the tagline; the gold menu arrow sits under it */
+@media (max-width: 600px) {
+  .logo-nameplate .np-line1, .logo-nameplate .np-line2 { display: none !important; }
+  .logo-nameplate::before { content: "Learn · Recite · Memorise"; display: block; font-family: var(--font-heading); font-weight: 700; color: var(--navy); font-size: 0.8rem; line-height: 1.3; white-space: nowrap; }
+  .logo-nameplate::after { content: ""; display: block; width: 0; height: 0; margin: 3px auto 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-top: 8px solid #B8860B; }
+}
+
 /* Phone: nameplate a bit bigger */
 @media (max-width: 600px) {
   .logo-overlap-wrap .np-line1 { font-size: 0.62rem; }
@@ -656,6 +663,7 @@
   .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks li:last-child { display: none !important; }
   .cb-wrap:has(img[src*="Coursebanner1"]) .cb-checks li:nth-last-child(2) { white-space: nowrap; }
   .cb-wrap:has(img[src*="Coursebanner2"]) .cb-eyebrow { margin-top: 6cqw !important; }
+  .cb-wrap:has(img[src*="Coursebanner2"]) .cb-checks li:last-child { display: none !important; }
 }
 
 /* Courses page (phone): course 03 heading moved down */
