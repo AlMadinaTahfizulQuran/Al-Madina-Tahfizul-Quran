@@ -661,3 +661,8 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner3"]) .cb-title { font-size: 4.2cqw !important; }
 }
+
+/* Courses page (phone): course 03, only the 2nd and last bullets wrap before the edge */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks li:nth-child(2), .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks li:last-child { padding-right: 22%; }
+}
