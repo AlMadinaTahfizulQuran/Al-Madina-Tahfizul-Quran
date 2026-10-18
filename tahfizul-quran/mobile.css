@@ -666,3 +666,8 @@
 @media (max-width: 600px) {
   .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks li:nth-child(2), .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks li:last-child { padding-right: 22%; }
 }
+
+/* Courses page (phone): course 03 checklist a little further right */
+@media (max-width: 600px) {
+  .cb-wrap:has(img[src*="Coursebanner3"]) .cb-checks { left: 12%; }
+}
